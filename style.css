@@ -303,19 +303,83 @@ li>a>button:hover>span:last-of-type{
 }
 
 
+/* About Section code */
 
 
 
+.about{
+  background-color: #111;
+  min-height: 50vh;
+}
+
+.about-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20rem
+}
+
+.title_h1{
+  color: #fff;
+  margin-bottom: 1.1rem;
+  position: relative;
+  display: inline-block;
+  font-size: 3.5rem;
+}
+
+.about p{
+  color: #fff;
+  margin: 1.5rem 0;
+  font-size: 20px;
+}
+
+.about_social{
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+.about_social i{
+  color: crimson;
+  font-size: 16px;
+  background-color: transparent;
+  margin: 5px;
+  height: 35px;
+  width: 35px;
+  line-height: 35px;
+  text-align: center;
+  border-radius: 25%;
+  transition: 0.5s;
+  border: 1.5px solid crimson;
+
+  /*box-shadow: 0 1px 5px 3px crimson;*/
+}
+
+.about_social i:hover{
+  transform: scale(1.5);
+  box-shadow: 0 1px 5px 3px crimson;
+}
+
+.btn-b{
+  display: inline-block;
+  background: crimson;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px 30px ;
+  margin: 10px 0 0 3px;
+  border-radius: 6px;
+  /*box-shadow: 0 1px 5px 3px crimson;*/
+  color: #fff;
+  transition: all 0.3s ease;
 
 
+  border: 2px solid crimson;
+}
 
-
-
-
-
-
-
-
+.btn-b:hover{
+  transform: scale(1.05);
+  box-shadow: 0 1px 5px 3px crimson;
+  color: #fff;
+  background: none;
+}
 
 
 
