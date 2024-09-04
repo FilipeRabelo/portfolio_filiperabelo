@@ -144,7 +144,12 @@ li>a>button:hover>span:last-of-type{
   color: crimson;
 }
 
-
+.menu a{
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-left: 4rem;
+  transition: all 0.3s ease;
+}
 
 
 
