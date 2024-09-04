@@ -164,6 +164,8 @@ li>a>button:hover>span:last-of-type{
 
 /* end - styles Header */
 
+/*-----------------------------------------------------------------------------------*/
+
 /* styles - home section code */
 
 .home{
@@ -302,10 +304,11 @@ li>a>button:hover>span:last-of-type{
   transform: scale(1.2);
 }
 
+/* End - home section code */
+
+/*-----------------------------------------------------------------------------------*/
 
 /* About Section code */
-
-
 
 .about{
   background-color: #111;
@@ -379,5 +382,37 @@ li>a>button:hover>span:last-of-type{
   color: #fff;
   background: none;
 }
+
+/* End - About Section code */
+
+/*-----------------------------------------------------------------------------------*/
+
+/* Services Section Code */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
