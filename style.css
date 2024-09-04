@@ -294,9 +294,13 @@ li>a>button:hover>span:last-of-type{
   line-height: 40px;
   text-align: center;
   box-shadow: 0 1px 5px 3px crimson;
+  border-radius: 25%;
+  transition: 0.5s;
 }
 
-
+.social_icons i:hover{
+  transform: scale(1.2);
+}
 
 
 
