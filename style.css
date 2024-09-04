@@ -42,8 +42,11 @@ html{
 
 body{
   background-color: var(--dark-900);
+  /*background-color: var(--bg-color);*/
   color: var(--text-color)
 }
+
+/* styles Header */
 
 section{
   min-height: 100vh;
@@ -149,9 +152,25 @@ li>a>button:hover>span:last-of-type{
   font-weight: 500;
   margin-left: 4rem;
   transition: all 0.3s ease;
+  border-bottom: 3px solid transparent;
 }
 
+.menu-btn{
+  color: #ffffff;
+  font-size: 23px;
+  cursor: pointer;
+  display: none;
+}
 
+/* end - styles Header */
 
+/* styles - home section code */
+
+.home{
+  display: flex;
+  align-items: center;
+  /*background-color: var(--bg-color);*/
+  background-color: var(--dark-900);
+}
 
 
