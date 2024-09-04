@@ -391,7 +391,7 @@ li>a>button:hover>span:last-of-type{
 
 .services{
   color: #fff;
-  /*background: #001;*/
+  background: var(--dark-900);
 }
 
 .heading{
@@ -401,7 +401,7 @@ li>a>button:hover>span:last-of-type{
 
 .services-list{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, auto));
   grid-gap: 40px;
   margin-top: 50px;
 }
@@ -439,16 +439,61 @@ li>a>button:hover>span:last-of-type{
   transform: translateY(-10px);
 }
 
+/* End -  Services Section Code */
 
+/*-----------------------------------------------------------------------------------*/
 
+/* Portfolio section code */
 
+.portfolio-content{
+  background: #111;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+  gap: 2.3rem;
+  margin-top: 4.2rem;
+  align-items: center;
+}
 
+.row{
+  background: var(--dark-700);
+  border-radius: 28px;
+  border: 1px solid transparent;
+  box-shadow: 0 0 5px crimson;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
 
+.row img{
+  height: auto;
+  width: 100%;
+  border-radius: 28px;
+  margin-bottom: 1.4rem;
+}
 
+.main-row{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
 
+.row h5{
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text-color);
+}
 
-
-
+.row i{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 55px;
+  height: 55px;
+  font-size: 27px;
+  border-radius: 50%;
+  background: crimson;
+  color: var(--text-color);
+}
 
 
 
