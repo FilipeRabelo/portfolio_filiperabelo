@@ -312,11 +312,11 @@ li>a>button:hover>span:last-of-type{
   min-height: 50vh;
 }
 
-.about-container{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20rem
-}
+/*.about-container{*/
+/*  display: grid;*/
+/*  grid-template-columns: repeat(2, 1fr);*/
+/*  gap: 20rem*/
+/*}*/
 
 .title_h1{
   color: #fff;
@@ -370,7 +370,6 @@ li>a>button:hover>span:last-of-type{
   color: #fff;
   transition: all 0.3s ease;
 
-
   border: 2px solid crimson;
 }
 
@@ -380,11 +379,5 @@ li>a>button:hover>span:last-of-type{
   color: #fff;
   background: none;
 }
-
-
-
-
-
-
 
 
