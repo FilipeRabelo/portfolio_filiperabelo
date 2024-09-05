@@ -43,3 +43,17 @@ function slide() {
 
 slide()
 setInterval(slide, 2000);
+
+/* Toggle menu */
+
+$('.menu-btn').click(function(){
+  $('.menu').toggleClass("active");
+  $('.menu-btn i').toggleClass("active");
+});
+
+/*$(document).ready(function () {
+  $('.menu-btn').click(function () {
+    $('.menu').toggleClass("active");
+    $('.menu-btn i').toggleClass("active");
+  });
+});*/
