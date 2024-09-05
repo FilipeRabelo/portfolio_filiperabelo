@@ -227,7 +227,7 @@ li>a>button:hover>span:last-of-type {
   margin-bottom: 10px;
 }
 
-#sliderValue {
+#SliderValue {
   display: flex;
   font-family: sans-serif;
   color: crimson;

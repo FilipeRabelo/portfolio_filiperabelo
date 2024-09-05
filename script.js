@@ -1,7 +1,3 @@
-const yearSpan = document.getElementById('copyright');
-const copyright = new Date().getFullYear();
-yearSpan.textContent = copyright;
-
 
 /*  typing text code */
 
@@ -13,12 +9,13 @@ var sliderContent = [
   "Code"
 ];
 
+
 var sliderValue = document.querySelector("#SliderValue");
 
 function slide() {
 
   if (sliderCounter >= sliderContent.length) {
-    sliderCounter = 0;
+      sliderCounter = 0;
   }
 
   sliderValue.innerHTML = ""
