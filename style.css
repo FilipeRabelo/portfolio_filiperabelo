@@ -443,6 +443,10 @@ li>a>button:hover>span:last-of-type{
 
 /* Portfolio section code */
 
+.portfolio {
+  background: #111;
+}
+
 .portfolio-content{
   background: #111;
   display: grid;
@@ -576,6 +580,51 @@ li>a>button:hover>span:last-of-type{
   background: none;
   box-shadow: 0 1px 5px 3px crimson;
 }
+
+/* Footer section code */
+
+.footer{
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  padding: 40px 0;
+  background: var(--bg-color);
+}
+
+.footer .social{
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.footer .social a{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  font-size: 2rem;
+  margin: 20px;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  text-align: center;
+  box-shadow: 0 1px 5px 3px crimson;
+  color: crimson;
+  border-radius:  25%;
+  transition: 0.5s;
+}
+
+.footer .social a:hover{
+  transform: scale(1.5) translateY(-8px);
+  box-shadow: 0 0 20px crimson;
+}
+
+.footer .copyright{
+  
+}
+
+
+
+
 
 
 
