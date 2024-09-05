@@ -162,6 +162,22 @@ li>a>button:hover>span:last-of-type {
   display: none;
 }
 
+
+
+.menu.active {
+  display: block;
+  /* Quando a classe 'active' for adicionada, ele aparece */
+}
+
+.menu-btn i.active {
+  transform: rotate(90deg);
+  /* Adiciona uma animação de rotação no ícone */
+  transition: transform 0.3s ease;
+}
+
+
+
+
 /* end - styles Header */
 
 /*-----------------------------------------------------------------------------------*/

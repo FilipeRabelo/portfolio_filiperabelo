@@ -51,9 +51,16 @@ $('.menu-btn').click(function(){
   $('.menu-btn i').toggleClass("active");
 });
 
-/*$(document).ready(function () {
-  $('.menu-btn').click(function () {
-    $('.menu').toggleClass("active");
-    $('.menu-btn i').toggleClass("active");
-  });
-});*/
+/* Scroll animation */
+
+const sr = ScrollReveal({
+  origin: "top",
+  disance: "80px",
+  duration: 2000,
+  reset: true
+});
+
+sr.reveal(".featured-text", {});
+sr.reveal(".home-img", {delay: 200});
+
+sr.reveal(".heading", {})
