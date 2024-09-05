@@ -439,8 +439,6 @@ li>a>button:hover>span:last-of-type{
   transform: translateY(-10px);
 }
 
-/* End -  Services Section Code */
-
 /*-----------------------------------------------------------------------------------*/
 
 /* Portfolio section code */
@@ -508,6 +506,76 @@ li>a>button:hover>span:last-of-type{
   cursor: pointer;
 }
 
+/*-----------------------------------------------------------------------------------*/
+
+
+/* Contact section code */
+
+.contact h2{
+  margin-bottom: 3rem;
+}
+
+.contact form {
+  max-width: 90rem;
+  margin: 1rem auto;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.contact form .input-box{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form textarea{
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 1.6rem;
+  color: var(--text-color);
+  border: 2px solid crimson;
+  /*box-shadow: 0 1px 5px 3px crimson;*/
+  margin: 0.7rem 0;
+  border-radius: 0.8rem;
+  background: transparent;
+  resize: none;
+}
+
+.contact form .input-box input,
+.contact form textarea:hover{
+  border: 1px solid crimson;
+}
+
+.contact form .input-box input{
+  width: 49%;
+  margin: 0.7rem 0.35rem;
+}
+
+.contact .btn-t{
+  margin-top: 2rem;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  width: 160px !important;
+  height: 45px;
+  outline: none;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  flex-wrap: nowrap;
+  background: crimson;
+  border: 2px solid crimson;
+  transition: all 0.3s ease;
+}
+
+.contact form .btn-t:hover{
+  color: crimson;
+  background: none;
+  box-shadow: 0 1px 5px 3px crimson;
+}
 
 
 
