@@ -674,15 +674,15 @@ li>a>button:hover>span:last-of-type {
     transition: all 0.3s ease;
   }
 
-  .menu active{
+  .menu active {
     left: 0;
   }
 
-  .menu li{
+  .menu li {
     display: block;
   }
 
-  .menu li a{
+  .menu li a {
     display: inline-block;
     margin: 20px 0;
     font-size: 25px;
@@ -691,19 +691,19 @@ li>a>button:hover>span:last-of-type {
 }
 
 @media (max-width: 786px) {
-  section{
+  section {
     padding: 5rem 10% 2rem;
   }
 
-  .home-img img{
+  .home-img img {
     display: none;
   }
 
-  .about{
+  .about {
     flex-direction: column;
   }
 
-  .contact form .input-box input{
+  .contact form .input-box input {
     width: 100%;
   }
 }
