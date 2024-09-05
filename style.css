@@ -477,12 +477,6 @@ li>a>button:hover>span:last-of-type{
   margin-bottom: 0.5rem;
 }
 
-.row h5{
-  font-size: 20px;
-  font-weight: 600;
-  color: var(--text-color);
-}
-
 .row i{
   display: inline-flex;
   align-items: center;
@@ -495,6 +489,24 @@ li>a>button:hover>span:last-of-type{
   color: var(--text-color);
 }
 
+.row h4{
+  font-size: 25px;
+  font-weight: 700px;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.row h5{
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.row:hover{
+  border: 1px solid crimson;
+  transform: translateY(-5px) scale(1);
+  cursor: pointer;
+}
 
 
 
