@@ -467,7 +467,7 @@ li>a>button:hover>span:last-of-type {
   transition: all 0.3s ease;
 }
 
-.row img {
+.row img, video {
   height: auto;
   width: 100%;
   border-radius: 28px;
