@@ -308,7 +308,7 @@
 		<main class="contact" id="contact">
 			<h2 class="heading">Contact <span>Me</span></h2>
 
-			 <form action="#">
+			 <form action="#" id="contact-form">
 
 				<div class="input-box">
 					<input type="text"  name="user_name"  placeholder="Full Name">
@@ -367,7 +367,7 @@
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
     <script type="text/javascript">
       (function () {
-        emailjs.init('YOUR_USER_ID');  // Substitua 'YOUR_USER_ID' pelo seu ID de usuário do EmailJS
+        emailjs.init('RL4fWra5TdKQLNExn');  // Substitua 'YOUR_USER_ID' pelo seu ID de usuário do EmailJS
       })();
 
       document.getElementById('contact-form').addEventListener('submit', function (event) {
@@ -376,8 +376,10 @@
         emailjs.sendForm('service_en95kxs', 'template_1bvpmxq', this)
           .then(function () {
             alert('Mensagem enviada com sucesso!');
+             window.location.reload();  // Recarrega a página após o envio
           }, function (error) {
             alert('Erro ao enviar, tente novamente!');
+             window.location.reload();  // Recarrega a página após o envio
           });
       });
     </script>
