@@ -308,7 +308,7 @@
 		<main class="contact" id="contact">
 			<h2 class="heading">Contact <span>Me</span></h2>
 
-			 <form action="#" id="contact-form">
+			 <form id="contact-form">
 
 				<div class="input-box">
 					<input type="text"  name="user_name"  placeholder="Full Name">
@@ -377,9 +377,11 @@
           .then(function () {
             alert('Mensagem enviada com sucesso!');
              window.location.reload();  // Recarrega a página após o envio
+             return false;
           }, function (error) {
             alert('Erro ao enviar, tente novamente!');
              window.location.reload();  // Recarrega a página após o envio
+             return false;
           });
       });
     </script>
