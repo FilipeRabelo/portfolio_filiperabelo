@@ -9,12 +9,7 @@
 		<link rel="icon" href="./img/favicon.png" type="image/x-icon">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
 
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-
-   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-      crossorigin="anonymous" referrerpolicy="no-referrer">
-    </script>-->
+    <script type="text/JavaScript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
     <link rel="stylesheet" href="style.css" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/css/boxicons.min.css" />
@@ -85,7 +80,6 @@
 
 		</header>
 
-
 		<!-- home section code -->
 
 		<section class="home" id="home">
@@ -100,7 +94,7 @@
 				</div>
 
 				<div class="featured-text-info">
-					<p>My name is Filipe! I'm a Web developer with over 2+ years of experience</p>
+					<p>My name is Filipe Rabelo! I'm a Web developer with over 2+ years of experience</p>
 				</div>
 
 				<div class="social_icons">
@@ -311,19 +305,19 @@
 
 		<!-- Contact Section code -->
 
-		<section class="contact" id="contact">
+		<main class="contact" id="contact">
 			<h2 class="heading">Contact <span>Me</span></h2>
 
-			<form action="#">
+			 <form action="#">
 
 				<div class="input-box">
-					<input type="text"  placeholder="Full Name">
-					<input type="email" placeholder="Email Address">
+					<input type="text"  name="user_name"  placeholder="Full Name">
+					<input type="email" name="user_email" placeholder="Email Address">
 				</div>
 
 				<div class="input-box">
-					<input type="number" placeholder="Phone Number">
-					<input type="text" 	 placeholder="Subject">
+					<input type="number" name="user_phone" placeholder="Phone Number">
+					<input type="text" 	 name="subject" placeholder="Subject">
 				</div>
 
 				<textarea name="message"
@@ -333,11 +327,22 @@
 									placeholder="Your Message">
 				</textarea>
 
-				<input type="submit" value="Send Message" class="btn-t">
+        <button type="submit" class="btn-t">Send Message</button>
 
-			</form>
+			</form> 
 
-		</section>
+      <!-- WhatsApp Button -->
+      <div class="whatsapp-button">
+        <a href="https://wa.me/5531984453924?text=Hello%20Filipe,%20I%20would%20like%20to%20contact%20you%20regarding%20your%20portfolio!"
+          target="_blank">
+          <button type="button" class="btn-whatsapp">
+            <span>Contact via WhatsApp</span>
+            <i class="fab fa-whatsapp"></i>
+          </button>
+        </a>
+      </div>
+
+		</main>
 
 		<!-- Footer Section Code-->
 
@@ -356,9 +361,29 @@
 
 		</footer>
 
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="script.js"></script>
+    <script type="text/JavaScript" src="https://unpkg.com/scrollreveal"></script>
+    <script type="text/JavaScript" src="script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init('YOUR_USER_ID');  // Substitua 'YOUR_USER_ID' pelo seu ID de usuário do EmailJS
+      })();
+
+      document.getElementById('contact-form').addEventListener('submit', function (event) {
+        event.preventDefault();       // Evita o comportamento padrão de recarregar a página
+
+        emailjs.sendForm('service_en95kxs', 'template_1bvpmxq', this)
+          .then(function () {
+            alert('Mensagem enviada com sucesso!');
+          }, function (error) {
+            alert('Erro ao enviar, tente novamente!');
+          });
+      });
+    </script>
     
 	</body>
 </html>
 
+<!-- service_en95kxs -->
+<!-- template_1bvpmxq -->

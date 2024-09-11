@@ -15,7 +15,7 @@ var sliderValue = document.querySelector("#SliderValue");
 function slide() {
 
   if (sliderCounter >= sliderContent.length) {
-      sliderCounter = 0;
+    sliderCounter = 0;
   }
 
   sliderValue.innerHTML = ""
@@ -44,11 +44,19 @@ function slide() {
 slide()
 setInterval(slide, 2000);
 
+
 /* Toggle menu */
 
-$('.menu-btn').click(function(){
+$('.menu-btn').click(function () {
   $('.menu').toggleClass("active");
   $('.menu-btn i').toggleClass("active");
+});
+
+$(document).ready(function () {
+  $('.menu-btn').click(function () {
+    $('.menu').toggleClass("active");
+    $('.menu-btn i').toggleClass("active");
+  });
 });
 
 /* Scroll animation */
@@ -61,6 +69,24 @@ const sr = ScrollReveal({
 });
 
 sr.reveal(".featured-text", {});
-sr.reveal(".home-img", {delay: 200});
+sr.reveal(".home-img", { delay: 200 });
 
 sr.reveal(".heading", {})
+
+
+//   /* ///////////////////////////////////// */
+
+//   (function () {
+//     emailjs.init('YOUR_USER_ID');  // Substitua 'YOUR_USER_ID' pelo seu ID de usuário do EmailJS
+//   })();
+
+// document.getElementById('contact-form').addEventListener('submit', function (event) {
+//   event.preventDefault();  // Evita o comportamento padrão de recarregar a página
+
+//   emailjs.sendForm('service_en95kxs', 'template_1bvpmxq', this)
+//     .then(function () {
+//       alert('Mensagem enviada com sucesso!');
+//     }, function (error) {
+//       alert('Erro ao enviar, tente novamente!');
+//     });
+// });
