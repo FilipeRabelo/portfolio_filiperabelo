@@ -471,9 +471,18 @@ li>a>button:hover>span:last-of-type {
   transition: all 0.3s ease;
 }
 
+.verPagina {
+  color: #FFFFFF;
+  font-size: 12px;
+
+  &:hover {
+    color: crimson;
+    font-weight: bold;
+  }
+}
+
 row-icon:hover {
   color: crimson;
-
 }
 
 
@@ -504,7 +513,7 @@ row-icon:hover {
 }
 
 .row h4 {
-  font-size: 25px;
+  font-size: 16px;
   font-weight: 700px;
   margin-bottom: 10px;
   line-height: 1.4;
@@ -678,7 +687,7 @@ row-icon:hover {
 
   .menu-btn i.active::before {
     content: "\f00d";
-  } 
+  }
 
   .menu {
     display: none;
