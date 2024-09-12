@@ -86,6 +86,10 @@ header {
   display: flex;
 }
 
+.menu.active {
+  display: block;
+}
+
 button {
   appearance: none;
   background-color: transparent;
@@ -467,6 +471,12 @@ li>a>button:hover>span:last-of-type {
   transition: all 0.3s ease;
 }
 
+row-icon:hover {
+  color: crimson;
+
+}
+
+
 .row img, video {
   height: auto;
   width: 100%;
@@ -534,9 +544,9 @@ li>a>button:hover>span:last-of-type {
   margin: 1rem auto;
   text-align: center;
   margin-bottom: 3rem;
-} */
+}
 
-.contact form .input-box {
+*/ .contact form .input-box {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -668,6 +678,14 @@ li>a>button:hover>span:last-of-type {
 
   .menu-btn i.active::before {
     content: "\f00d";
+  } 
+
+  .menu {
+    display: none;
+  }
+
+  .menu.active {
+    display: block;
   }
 
   .menu {

@@ -4,9 +4,9 @@
 var sliderCounter = 0;
 var sliderContent = [
   "Developer",
+  "Code",
   "Designer",
-  "youtube",
-  "Code"
+  "Youtube"  
 ];
 
 
@@ -47,17 +47,26 @@ setInterval(slide, 2000);
 
 /* Toggle menu */
 
-$('.menu-btn').click(function () {
-  $('.menu').toggleClass("active");
-  $('.menu-btn i').toggleClass("active");
-});
+// $('.menu-btn').click(function () {
+//   $('.menu').toggleClass("active");
+//   $('.menu-btn i').toggleClass("active");
+// });
 
-$(document).ready(function () {
-  $('.menu-btn').click(function () {
-    $('.menu').toggleClass("active");
-    $('.menu-btn i').toggleClass("active");
-  });
-});
+// $(document).ready(function () {
+//   $('.menu-btn').click(function () {
+//     $('.menu').toggleClass("active");
+//     $('.menu-btn i').toggleClass("active");
+//   });
+// });
+
+// $(document).ready(function () {
+//   $('.menu-btn').click(function () {
+//     alert("teste"); // Alerta para verificar se o clique está funcionando
+//     $('.menu').toggleClass("active");
+//     $('.menu-btn i').toggleClass("active");
+//   });
+// });
+
 
 /* Scroll animation */
 
@@ -72,21 +81,3 @@ sr.reveal(".featured-text", {});
 sr.reveal(".home-img", { delay: 200 });
 
 sr.reveal(".heading", {})
-
-
-//   /* ///////////////////////////////////// */
-
-//   (function () {
-//     emailjs.init('YOUR_USER_ID');  // Substitua 'YOUR_USER_ID' pelo seu ID de usuário do EmailJS
-//   })();
-
-// document.getElementById('contact-form').addEventListener('submit', function (event) {
-//   event.preventDefault();  // Evita o comportamento padrão de recarregar a página
-
-//   emailjs.sendForm('service_en95kxs', 'template_1bvpmxq', this)
-//     .then(function () {
-//       alert('Mensagem enviada com sucesso!');
-//     }, function (error) {
-//       alert('Erro ao enviar, tente novamente!');
-//     });
-// });

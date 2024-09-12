@@ -13,6 +13,8 @@
 
   <link rel="stylesheet" href="styles/style.css" type="text/css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/css/boxicons.min.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 
   <title>Filipe Rabelo | Portfolio</title>
 </head>
@@ -23,8 +25,15 @@
 
   <header>
 
-    <div class="logo"><a href="#">Portfo<span>lio.</span></a></div>
+    <div class="logo">
+      <a href="#">Portfo<span>lio.</span></a>
+    </div>
 
+    <div class="menu-btn">
+      <i class="fas fa-bars"></i>
+    </div>
+
+    <!-- <nav> -->
     <ul class="menu">
 
       <li>
@@ -73,10 +82,9 @@
       </li>
 
     </ul>
+    <!-- </nav> -->
 
-    <div class="menu-btn">
-      <i class="fas fa-bars"></i>
-    </div>
+
 
   </header>
 
@@ -168,26 +176,27 @@
           <i class="fa-brands fa-app-store"></i>
           <h2>App development</h2>
           <p></p>
-          <a href="#">Learn more...</a>
+          <!-- <a href="#">Learn more...</a> -->
         </div>
 
         <div>
           <i class="fa-solid fa-code"></i>
           <h2>Web development</h2>
           <p></p>
-          <a href="#">Learn more...</a>
+          <!-- <a href="#">Learn more...</a> -->
         </div>
 
         <div>
           <i class="fa-solid fa-server"></i>
           <h2>Backend development</h2>
           <p></p>
-          <a href="#">Learn more...</a>
+          <!-- <a href="#">Learn more...</a> -->
         </div>
 
       </div>
     </div>
   </section>
+
 
   <!-- Portfolio Section code-->
 
@@ -197,47 +206,35 @@
 
     <div class="portfolio-content">
 
+      <!-- pizzaria -->
       <div class="row">
+
         <a href="https://github.com/FilipeRabelo/pizzariaKatuneggi">
           <img src="img/pizzaria.jpg" alt="">
         </a>
+        <!-- <video controls autoplay muted>
+          <source src="video/spotify.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video> -->
 
         <div class="main-row">
           <div class="row-text">
             <h5>App development</h5>
           </div>
           <div class="row-icon">
-            <i class="bx bxl-github"></i>
-          </div>
-        </div>
-        <h4>
-          Next.js, React, Node.js
-        </h4>
-      </div>
-
-      <div class="row">
-        <a href="https://filiperabelo.github.io/cloneSpotify/">
-          <img src="img/spotifyClone.jpg" alt="">
-          <!-- <video controls>
-            <source src="video/pizzaria.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video> -->
-        </a>
-        <div class="main-row">
-          <div class="row-text">
-            <h5>Web development</h5>
-          </div>
-          <div class="row-icon">
-            <i class="bx bxl-github"></i>
+            <a href="https://github.com/FilipeRabelo/pizzariaKatuneggi">
+              <i class="bx bxl-github"></i>
+            </a>
           </div>
         </div>
 
-        <h4>Web development</h4>
+        <h4>Next.js - React - Node.js</h4>
+
       </div>
 
+      <!-- primeCine -->
       <div class="row">
         <a href="https://github.com/FilipeRabelo/prime/tree/master">
-          <!-- <img src="img/galaxias.jpg" alt=""> -->
           <video controls autoplay muted>
             <source src="video/primeCine.mp4" type="video/mp4">
             Your browser does not support the video tag.
@@ -245,71 +242,146 @@
         </a>
         <div class="main-row">
           <div class="row-text">
-            <h5>React.js</h5>
+            <h5>App development</h5>
           </div>
           <div class="row-icon">
-            <i class="bx bxl-github"></i>
+            <a href="https://github.com/FilipeRabelo/prime/tree/master">
+              <i class="bx bxl-github"></i>
+            </a>
           </div>
         </div>
 
-        <h4>Web development</h4>
+        <h4>React.Js</h4>
       </div>
 
+      <!-- spotifyClone -->
       <div class="row">
-        <img src="img/siteFinancies.jpg" alt="">
 
-        <div class="main-row">
-          <div class="row-text">
-            <h5>Web development</h5>
-          </div>
-          <div class="row-icon">
-            <i class="bx bxl-github"></i>
-          </div>
-        </div>
-
-        <h4>
-          HTML5, CSS3 BootsTrap
-        </h4>
-      </div>
-
-      <div class="row">
-        <a href="https://filiperabelo.github.io/jgMataMosquito/">
-          <img src="img/mata_mosquito_js.jpg" alt="">
+        <a href="https://filiperabelo.github.io/cloneSpotify/">
+          <video controls autoplay muted>
+            <source src="video/spotify.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
         </a>
+
         <div class="main-row">
           <div class="row-text">
             <h5>Web development</h5>
           </div>
           <div class="row-icon">
-            <i class="bx bxl-github"></i>
+            <a href="https://github.com/FilipeRabelo/cloneSpotify">
+              <i class="bx bxl-github"></i>
+            </a>
+          </div>
+        </div>
+
+        <h4>Html5 - Css3 - BootsTrap</h4>
+
+      </div>
+
+
+      <!-- siteFinancies -->
+      <div class="row">
+        <a href="https://filiperabelo.github.io/ProjetoSiteFinans/">
+          <video controls autoplay muted>
+            <source src="video/finances.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </a>
+
+        <div class="main-row">
+          <div class="row-text">
+            <h5>Web development</h5>
+          </div>
+          <div class="row-icon">
+            <a href="https://github.com/FilipeRabelo/ProjetoSiteFinans">
+              <i class="bx bxl-github"></i>
+            </a>
           </div>
         </div>
 
         <h4>
-          HTML, CSS and JavaScript,
+          Html5 - Css3 - BootsTrap
         </h4>
       </div>
 
+      <!-- matamosquito -->
       <div class="row">
+        <a href="https://filiperabelo.github.io/jgMataMosquito">
+          <video controls autoplay muted>
+            <source src="video/matamosquito.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </a>
+
+        <div class="main-row">
+          <div class="row-text">
+            <h5>Web development</h5>
+          </div>
+          <div class="row-icon">
+            <a href="https://github.com/FilipeRabelo/jgMataMosquito">
+              <i class="bx bxl-github"></i>
+            </a>
+          </div>
+        </div>
+
+        <h4>Html5 - Css3 - JavaScript</h4>
+      </div>
+
+      <!-- github_favoritos -->
+      <div class="row">
+
         <a href="https://filiperabelo.github.io/projetoGitHubFavorito01/">
-          <img src="img/github_favoritos.jpg" alt="">
+          <video controls autoplay muted>
+            <source src="video/githubFavorit.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
         </a>
+
         <div class="main-row">
           <div class="row-text">
             <h5>Backend development</h5>
           </div>
           <div class="row-icon">
-            <i class="bx bxl-github"></i>
+            <a href="https://github.com/FilipeRabelo/projetoGitHubFavorito01">
+              <i class="bx bxl-github"></i>
+            </a>
           </div>
         </div>
 
         <h4>
-          Backend development - import github bookmarks
+          Request Api - JavaScript
         </h4>
+
+      </div>
+
+      <div class="row">
+
+        <a href="https://github.com/FilipeRabelo/projeto_fotoBlog">
+          <video controls autoplay muted>
+            <source src="video/fotoBlog.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </a>
+
+        <div class="main-row">
+          <div class="row-text">
+            <h5>Web development</h5>
+          </div>
+          <div class="row-icon">
+            <a href="https://github.com/FilipeRabelo/projeto_fotoBlog">
+              <i class="bx bxl-github"></i>
+            </a>
+          </div>
+        </div>
+
+        <h4>
+          Html5 - Css3 - Animated
+        </h4>
+
       </div>
 
     </div>
-
   </section>
 
 
@@ -331,13 +403,12 @@
       </div>
 
       <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message">
-				</textarea>
+          </textarea>
 
       <button type="submit" class="btn-t">Send Message</button>
 
     </form>
 
-    <!-- WhatsApp Button -->
     <!-- Botão de WhatsApp -->
     <div class="whatsapp-button">
       <a href="https://wa.me/5531984453924?text=Olá%20Filipe,%20gostaria%20de%20entrar%20em%20contato%20sobre%20seu%20portfólio!"
@@ -372,6 +443,9 @@
   <script type="text/JavaScript" src="https://unpkg.com/scrollreveal"></script>
   <script type="text/JavaScript" src="scripts/script.js"></script>
 
+
+  <!-- envio do formulario com emailjs -->
+
   <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
   <script type="text/javascript">
     (function () {
@@ -391,6 +465,21 @@
           window.location.reload();  // Recarrega a página após o envio
           return false;
         });
+    });
+  </script>
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const menuBtn = document.querySelector('.menu-btn');
+      const menu = document.querySelector('.menu');
+      const menuIcon = menuBtn.querySelector('i');
+
+      menuBtn.addEventListener('click', function () {
+        alert("teste");
+        menu.classList.toggle('active');
+        menuBtn.classList.toggle('active');
+      });
     });
   </script>
 

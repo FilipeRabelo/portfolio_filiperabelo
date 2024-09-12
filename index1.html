@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Test</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        .menu {
+            display: none;
+        }
+
+        .menu.active {
+            display: block;
+        }
+
+        .menu-btn.active i {
+            color: red; /* Exemplo de alteração para a classe active */
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-btn">
+        <i class="fas fa-bars">☰</i>
+    </div>
+
+    <ul class="menu">
+        <li>Home</li>
+        <li>About</li>
+        <li>Services</li>
+        <li>Portfolio</li>
+        <li>Contact</li>
+    </ul>
+
+    <script>
+        $(document).ready(function () {
+            $('.menu-btn').click(function () {
+                alert("teste");
+                $('.menu').toggleClass("active");
+                $('.menu-btn').toggleClass("active");
+            });
+        });
+    </script>
+</body>
+</html>
