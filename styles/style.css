@@ -472,12 +472,15 @@ li>a>button:hover>span:last-of-type {
 }
 
 .verPagina {
+  display: inline-block;
   color: #FFFFFF;
   font-size: 12px;
+  font-weight: bold;
+  transition: all .7s;
 
   &:hover {
     color: crimson;
-    font-weight: bold;
+    transform: scale(1.1)
   }
 }
 
