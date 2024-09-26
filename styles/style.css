@@ -469,6 +469,7 @@ li>a>button:hover>span:last-of-type {
   box-shadow: 0 0 5px crimson;
   padding: 20px;
   transition: all 0.3s ease;
+  
 }
 
 .verPagina {
@@ -552,6 +553,7 @@ row-icon:hover {
 
 
 .contact form {
+ 
   max-width: 90rem;
   margin: 1rem auto;
   text-align: center;
@@ -559,6 +561,7 @@ row-icon:hover {
 }
 
 */ .contact form .input-box {
+  
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -592,8 +595,8 @@ row-icon:hover {
   display: inline-block;
   justify-content: center;
   align-items: center;
-  color: #fff;
-  width: 160px !important;
+  color: #000;
+  width: 250px !important;
   height: 45px;
   outline: none;
   font-size: 18px;
@@ -604,11 +607,12 @@ row-icon:hover {
   background: crimson;
   border: 2px solid crimson;
   transition: all 0.3s ease;
+  font-weight: bold;
 }
 
 .contact form .btn-t:hover {
-  color: crimson;
-  background: none;
+  /* color: crimson;
+  background: none; */
   box-shadow: 0 1px 5px 3px crimson;
 }
 
@@ -773,19 +777,20 @@ row-icon:hover {
 
   span {
     font-weight: bold;
+    color:#000
   }
 
   i {
-    color: #FFFFFF;
+    color: #000;
     margin-left: 8px;
-    font-size: 18px;
+    font-size: 22px;
     font-weight: bold;
   }
 
   &:hover {
-    background-color: transparent;
-    transform: scale(1.05);
+    /* background-color: transparent; */
+    /* transform: scale(1.05); */
     box-shadow: 0 0 20px #39FF14;
-    color: #39FF14;
+    /* color: #39FF14; */
   }
 }
