@@ -557,9 +557,7 @@ video {
     display: flex; /* Para centralizar a imagem */
     justify-content: center; /* Centraliza horizontalmente */
     align-items: center; /* Centraliza verticalmente */
-
   }
-
 }
 
 .imgCertificado {
@@ -811,6 +809,8 @@ video {
 }
 
 @media (max-width: 786px) {
+
+
   section {
     padding: 5rem 10% 2rem;
   }
@@ -825,5 +825,9 @@ video {
 
   .contact form .input-box input {
     width: 100%;
+  }
+
+  video {
+    max-height: 220px !important;
   }
 }
