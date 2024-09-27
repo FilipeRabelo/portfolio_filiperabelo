@@ -55,15 +55,6 @@
       </li>
 
       <li>
-        <a href="#certificates">
-          <button type="button">
-            <span>Certificados</span>
-            <span class="fa-solid fa-trophy"></span>
-          </button>
-        </a>
-      </li>
-
-      <li>
         <a href="#services">
           <button type="button">
             <span>Serviços</span>
@@ -77,6 +68,15 @@
           <button type="button">
             <span>Portfolio</span>
             <span class="fa-solid fa-mountain-sun"></span>
+          </button>
+        </a>
+      </li>
+
+      <li>
+        <a href="#certificates">
+          <button type="button">
+            <span>Certificados</span>
+            <span class="fa-solid fa-trophy"></span>
           </button>
         </a>
       </li>
@@ -250,17 +250,44 @@
 
     <div class="portfolio-content">
 
-      <!-- pizzaria -->
+      <!-- pizzaria app-->
       <div class="row">
-        <img src="img/pizzaria.jpg" alt="">
-        <!-- <video controls autoplay muted>
-          <source src="video/spotify.mp4" type="video/mp4">
+        <!-- <img src="img/pizzaria.jpg" alt=""> -->
+        <video controls autoplay muted>
+          <source src="video/appReactNative.mp4" type="video/mp4">
           Your browser does not support the video tag.
-        </video> -->
+        </video>
 
         <div class="main-row">
           <div class="row-text">
             <h5>App development</h5>
+          </div>
+          <div class="row-icon"">
+                      <a href=" https://github.com/FilipeRabelo/app-pizzaria-reactNative">
+            <i class="bx bxl-github"></i>
+            </a>
+          </div>
+        </div>
+
+        <h4>React-native </h4>
+
+        <span>
+          <a class="verPagina" href="https://pizzaria-frontendbuild.vercel.app/">Ver página</a>
+        </span>
+
+      </div>
+
+      <!-- pizzaria -->
+      <div class="row">
+
+        <video controls autoplay muted>
+          <source src="video/pizzaria.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+
+        <div class="main-row">
+          <div class="row-text">
+            <h5>Web - App development</h5>
           </div>
           <div class="row-icon">
             <a href="https://github.com/FilipeRabelo/pizzariaKatuneggi">
@@ -277,32 +304,7 @@
 
       </div>
 
-      <!-- pizzaria app-->
-      <div class="row"  >
-        <!-- <img src="img/pizzaria.jpg" alt=""> -->
-        <video style="max-height: 180px" controls autoplay muted>
-          <source src="video/appReactNative.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
 
-        <div class="main-row">
-          <div class="row-text">
-            <h5>App development</h5>
-          </div>
-          <div class="row-icon"">
-            <a href="https://github.com/FilipeRabelo/pizzariaKatuneggi">
-              <i class="bx bxl-github"></i>
-            </a>
-          </div>
-        </div>
-
-        <h4>Next.js - React - Node.js</h4>
-
-        <span>
-          <a class="verPagina" href="https://github.com/FilipeRabelo/pizzariaKatuneggi">Ver página</a>
-        </span>
-
-      </div>
 
       <!-- primeCine -->
       <div class="row">
@@ -314,7 +316,7 @@
 
         <div class="main-row">
           <div class="row-text">
-            <h5>App development</h5>
+            <h5>Web - App development</h5>
           </div>
           <div class="row-icon">
             <a href="https://github.com/FilipeRabelo/prime/tree/master">
@@ -468,26 +470,59 @@
     </div>
   </section>
 
+  <!-- Certificates Section code-->
+
+  <section class="certificados" id="certificates">
+
+    <h2 class="heading"><span>Certificados</span></h2>
+
+    <div class="certificados-content">
+
+      <div class="row">
+        <img class="imgCertificado" src="imgCertificados/lifwatylw.PNG" />
+      </div>
+
+      <div class="row">
+        <img class="imgCertificado" src="imgCertificados/certificado-node.js-react-reactNative-typescript.jpg" />
+      </div>
+
+      <div class="row">
+        <img class="imgCertificado" src="imgCertificados/jsNode.jpg" />
+      </div>
+
+      <div class="row">
+        <img class="imgCertificado" src="imgCertificados/Certificado-Git-GitHubjpg.jpg" />
+      </div>
+
+      <div class="row">
+        <img class="imgCertificado" src="imgCertificados/certificadoFotoSQL.jpg" />
+      </div>
+
+      <div class="row">
+        <img class="imgCertificado" src="imgCertificados/certificadoAlgoritmoslogicadeprogramacao.jpg" />
+      </div>
+
+    </div>
+  </section>
 
   <!-- Contact Section code -->
 
   <main class="contact" id="contact">
-    <h2 class="heading">Contato <span></span></h2>
+    <h2 class="heading"><span>Contato</span></h2>
 
-    <form id="contact-form">
+    <form id="contact-form" style="width: 90%">
 
       <div class="input-box">
-        <input type="text" name="user_name" placeholder="Full Name">
-        <input type="email" name="user_email" placeholder="Email Address">
+        <input type="text" name="user_name" placeholder="Seu nome">
+        <input type="email" name="user_email" placeholder="Email para contato">
       </div>
 
       <div class="input-box">
-        <input type="number" name="user_phone" placeholder="Phone Number">
-        <input type="text" name="subject" placeholder="Subject">
+        <input type="number" name="user_phone" placeholder="Telefone">
+        <input type="text" name="subject" placeholder="Assunto">
+        <textarea class="textAreaContact" name="message" cols="30" rows="10" placeholder="Sua mensagem"></textarea>
       </div>
 
-      <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message">
-          </textarea>
 
       <button type="submit" class="btn-t">Entrar em contato</button>
 

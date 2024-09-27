@@ -20,7 +20,7 @@
 
   --gray-100: #8a8a8a;
   --green-900: #3fffa3;
-  --red-900: #FF3f4b;
+  --red-900: #ff3f4b;
 
   --violet: #7f29e2;
   --green-neon: #39ff14;
@@ -43,7 +43,7 @@ html {
 body {
   background-color: var(--dark-900);
   /*background-color: var(--bg-color);*/
-  color: var(--text-color)
+  color: var(--text-color);
 }
 
 /* styles Header */
@@ -118,35 +118,35 @@ button span {
   color: #fff;
 }
 
-li>a>button {
+li > a > button {
   position: relative;
   display: grid;
   place-content: center;
-  grid-template-areas: 'stack';
+  grid-template-areas: "stack";
   padding: 0 1.5rem;
   text-transform: uppercase;
   font-weight: 300;
 }
 
-li>a>button>span {
+li > a > button > span {
   transition: all 300ms ease-in-out;
   grid-area: stack;
 }
 
-li>a>button>span:last-of-type {
+li > a > button > span:last-of-type {
   margin-top: 0.25rem;
   transform: scale(0);
   transition-delay: 0ms;
   border-radius: 50%;
 }
 
-li>a>button:focus-visible>span:first-of-type,
-li>a>button:hover>span:first-of-type {
+li > a > button:focus-visible > span:first-of-type,
+li > a > button:hover > span:first-of-type {
   transform: scale(0);
 }
 
-li>a>button:focus-visible>span:last-of-type,
-li>a>button:hover>span:last-of-type {
+li > a > button:focus-visible > span:last-of-type,
+li > a > button:hover > span:last-of-type {
   transform: scale(1);
   color: crimson;
 }
@@ -165,8 +165,6 @@ li>a>button:hover>span:last-of-type {
   cursor: pointer;
   display: none;
 }
-
-
 
 /* end - styles Header */
 
@@ -246,7 +244,7 @@ li>a>button:hover>span:last-of-type {
 }
 
 .animation {
-  animation: fade .3s forwards;
+  animation: fade 0.3s forwards;
 }
 
 @keyframes fade {
@@ -424,7 +422,6 @@ li>a>button:hover>span:last-of-type {
 .services-list div i {
   font-size: 50px;
   margin-bottom: 30px;
-
 }
 
 .services-list div h2 {
@@ -460,6 +457,7 @@ li>a>button:hover>span:last-of-type {
   gap: 2.3rem;
   margin-top: 4.2rem;
   align-items: center;
+  padding-bottom: 4.2rem;
 }
 
 .row {
@@ -469,19 +467,22 @@ li>a>button:hover>span:last-of-type {
   box-shadow: 0 0 5px crimson;
   padding: 20px;
   transition: all 0.3s ease;
-  
+
+  video {
+    height: 220px;
+  }
 }
 
 .verPagina {
   display: inline-block;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 12px;
   font-weight: bold;
-  transition: all .7s;
+  transition: all 0.7s;
 
   &:hover {
     color: crimson;
-    transform: scale(1.1)
+    transform: scale(1.1);
   }
 }
 
@@ -489,8 +490,8 @@ row-icon:hover {
   color: crimson;
 }
 
-
-.row img, video {
+.row img,
+video {
   height: auto;
   width: 100%;
   border-radius: 28px;
@@ -537,31 +538,60 @@ row-icon:hover {
 
 /*-----------------------------------------------------------------------------------*/
 
+/* certificados section code */
+
+.certificados {
+  background: var(--dark-900);
+}
+
+.certificados-content {
+  background: var(--dark-900);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2.3rem;
+  padding-top: 4.2rem;
+  padding-bottom: 4.2rem;
+
+  .row {
+    background-color: #000;
+    display: flex; /* Para centralizar a imagem */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+
+  }
+
+}
+
+.imgCertificado {
+  border-radius: 6px;
+  height: 25px;
+  width: 100%;
+  object-fit: contain; /* Mantém a proporção da imagem */
+  border-radius: 15px;
+}
+/*-----------------------------------------------------------------------------------*/
 
 /* Contact section code */
 
 .contact {
-
-  margin-top: 80px;
+  margin-top: 4.2rem;
+  margin-top: 15px;
+  background-color: #000;
+  padding-top: 4.2rem;
 
   h2 {
     margin-bottom: 3rem;
   }
 }
 
-
-
-
 .contact form {
- 
   max-width: 90rem;
   margin: 1rem auto;
   text-align: center;
   margin-bottom: 3rem;
 }
 
-*/ .contact form .input-box {
-  
+.contact form .input-box {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -611,8 +641,6 @@ row-icon:hover {
 }
 
 .contact form .btn-t:hover {
-  /* color: crimson;
-  background: none; */
   box-shadow: 0 1px 5px 3px crimson;
 }
 
@@ -623,7 +651,7 @@ row-icon:hover {
   bottom: 0;
   width: 100%;
   padding: 40px 0;
-  /*background: var(--bg-color);*/
+  background-color: #000;
 }
 
 .footer .social {
@@ -660,7 +688,49 @@ row-icon:hover {
   color: #fff;
 }
 
-@media(max-width: 1285px) {
+.whatsapp-button {
+  margin-top: 16px;
+  text-align: center;
+  color: #000;
+}
+
+.btn-whatsapp {
+  color: #000;
+  background-color: #39ff14;
+  margin-top: 2rem;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  height: 45px;
+  outline: none;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  flex-wrap: nowrap;
+  border: 2px solid 39FF14;
+  transition: all 0.3s ease;
+
+  span {
+    font-weight: bold;
+    color: #000;
+  }
+
+  i {
+    color: #000;
+    margin-left: 8px;
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+  &:hover {
+    color: #000;
+    box-shadow: 0 0 20px #39ff14;
+  }
+}
+
+@media (max-width: 1285px) {
   html {
     font-size: 55%;
   }
@@ -671,6 +741,10 @@ row-icon:hover {
 
   .about-container {
     grid-template-columns: auto;
+  }
+
+  .textAreaContact {
+    width: 90%;
   }
 }
 
@@ -731,6 +805,9 @@ row-icon:hover {
     font-size: 25px;
   }
 
+  .textAreaContact {
+    width: 90%;
+  }
 }
 
 @media (max-width: 786px) {
@@ -748,49 +825,5 @@ row-icon:hover {
 
   .contact form .input-box input {
     width: 100%;
-  }
-}
-
-
-.whatsapp-button {
-  margin-top: 16px;
-  text-align: center;
-  color: #000;
-}
-
-.btn-whatsapp {
-  background-color: #39FF14;
-  margin-top: 2rem;
-  display: inline-block;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 20px;
-  height: 45px;
-  outline: none;
-  font-size: 18px;
-  font-weight: 500;
-  border-radius: 6px;
-  cursor: pointer;
-  flex-wrap: nowrap;
-  border: 2px solid 39FF14;
-  transition: all 0.3s ease;
-
-  span {
-    font-weight: bold;
-    color:#000
-  }
-
-  i {
-    color: #000;
-    margin-left: 8px;
-    font-size: 22px;
-    font-weight: bold;
-  }
-
-  &:hover {
-    /* background-color: transparent; */
-    /* transform: scale(1.05); */
-    box-shadow: 0 0 20px #39FF14;
-    /* color: #39FF14; */
   }
 }
