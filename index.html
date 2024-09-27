@@ -13,10 +13,19 @@
 
   <link rel="stylesheet" href="styles/style.css" type="text/css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/css/boxicons.min.css" />
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
 
 
   <title>Filipe Rabelo | Portfolio</title>
+
+
+  <style>
+    .menu.active {
+      left: 0;
+      /* Mova o menu para a posição correta */
+    }
+  </style>
+
 </head>
 
 <body>
@@ -589,19 +598,50 @@
   </script>
 
 
-  <script>
+
+
+  
+
+  <script type="text/javascript">
+
     document.addEventListener('DOMContentLoaded', function () {
       const menuBtn = document.querySelector('.menu-btn');
       const menu = document.querySelector('.menu');
-      const menuIcon = menuBtn.querySelector('i');
 
       menuBtn.addEventListener('click', function () {
-        alert("teste");
         menu.classList.toggle('active');
         menuBtn.classList.toggle('active');
       });
+
+      // Fecha o menu ao clicar em um item do menu
+      menu.addEventListener('click', function () {
+        menu.classList.remove('active');
+        menuBtn.classList.remove('active');
+      });
     });
+
+    $(document).ready(function () {
+      // Quando um link do menu é clicado
+      $('.menu a').on('click', function (event) {
+        // Previne o comportamento padrão do link
+        event.preventDefault();
+
+        // Obtém o destino do link
+        var target = $(this).attr('href');
+
+        // Rolagem suave para a seção correspondente
+        $('html, body').animate({
+          scrollTop: $(target).offset().top
+        }, 500); // 800 milissegundos para a animação
+
+        // Fecha o menu
+        $('.menu').removeClass('active');
+        $('.menu-btn').removeClass('active');
+      });
+    });
+
   </script>
+
 
 </body>
 

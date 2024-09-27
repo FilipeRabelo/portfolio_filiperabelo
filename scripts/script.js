@@ -48,7 +48,6 @@ setInterval(slide, 2000);
 /* Toggle menu */
 
 $('.menu-btn').click(function () {
-  alert("teste");
   $('.menu').toggleClass("active");
   $('.menu-btn i').toggleClass("active");
 });
@@ -60,20 +59,12 @@ $(document).ready(function () {
   });
 });
 
-// $(document).ready(function () {
-//   $('.menu-btn').click(function () {
-//     alert("teste"); // Alerta para verificar se o clique está funcionando
-//     $('.menu').toggleClass("active");
-//     $('.menu-btn i').toggleClass("active");
-//   });
-// });
-
 
 /* Scroll animation */
 
 const sr = ScrollReveal({
   origin: "top",
-  disance: "80px",
+  distance: "80px",
   duration: 2000,
   reset: true
 });
