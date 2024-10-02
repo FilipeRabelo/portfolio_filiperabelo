@@ -403,7 +403,6 @@ li > a > button:hover > span:last-of-type {
 .servicesProjetos {
   color: #fff;
   background: #000;
-  
 }
 
 .services-listProjetos {
@@ -412,38 +411,44 @@ li > a > button:hover > span:last-of-type {
   grid-gap: 40px;
   margin-top: 50px;
   margin-bottom: 60px;
+}
 
-  div {
-    background: var(--dark-700);
-    padding: 40px;
-    font-size: 13px;
-    font-weight: 300;
-    border-radius: 15px;
-    border: 2px solid crimson;
-    transition: background 0.5s, transform 0.5s;
-  }
+.services-listProjetos div {
+  background: var(--dark-700);
+  padding: 40px;
+  font-size: 13px;
+  font-weight: 300;
+  border-radius: 15px;
+  border: 2px solid crimson;
+  transition: background 0.5s, transform 0.5s;
+}
 
-  div i {
-    font-size: 50px;
-    margin-bottom: 30px;
-  }
+.services-listProjetos div i {
+  font-size: 50px;
+  margin-bottom: 30px;
+}
 
-  div h2 {
-    font-size: 25px;
-    font-weight: 500;
-    margin-bottom: 15px;
-  }
+.services-listProjetos div h2 {
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
 
-  div a {
-    text-decoration: none;
-    color: #fff;
-    margin-top: 20px;
-    display: inline-block;
-  }
+.services-listProjetos div a {
+  text-decoration: none;
+  color: #fff;
+  margin-top: 20px;
+  display: inline-block;
+}
 
-  div:hover {
-    background: #ff004f;
-    transform: translateY(-10px);
+.services-listProjetos div:hover {
+  background: #ff004f;
+  transform: translateY(-10px);
+}
+
+@media (max-width: 600px) {
+  .services-listProjetos {
+    grid-template-columns: 1fr; /* Para telas menores, um item por linha */
   }
 }
 
