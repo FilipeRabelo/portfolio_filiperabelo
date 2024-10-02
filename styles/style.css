@@ -9,13 +9,15 @@
   scroll-behavior: smooth;
   font-family: -apple-system, sans-serif;
 
-  @media (max-width: 700px) {
-    input,
-    textarea,
-    select {
-    font-size: 16px; /* Ajuste o tamanho da fonte */
-    -webkit-text-size-adjust: 100%; /* Impede o ajuste de tamanho do texto no iOS */
-  }
+
+}
+
+@media (max-width: 700px) {
+  input,
+  textarea,
+  select {
+  font-size: 16px; /* Ajuste o tamanho da fonte */
+  -webkit-text-size-adjust: 100%; /* Impede o ajuste de tamanho do texto no iOS */
 }
 
 :root {
