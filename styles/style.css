@@ -400,6 +400,53 @@ li > a > button:hover > span:last-of-type {
 
 /*-----------------------------------------------------------------------------------*/
 
+.servicesProjetos {
+  color: #fff;
+  background: #000;
+  
+}
+
+.services-listProjetos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+  grid-gap: 40px;
+  margin-top: 50px;
+  margin-bottom: 60px;
+
+  div {
+    background: var(--dark-700);
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 15px;
+    border: 2px solid crimson;
+    transition: background 0.5s, transform 0.5s;
+  }
+
+  div i {
+    font-size: 50px;
+    margin-bottom: 30px;
+  }
+
+  div h2 {
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+
+  div a {
+    text-decoration: none;
+    color: #fff;
+    margin-top: 20px;
+    display: inline-block;
+  }
+
+  div:hover {
+    background: #ff004f;
+    transform: translateY(-10px);
+  }
+}
+
 /* Services Section Code */
 
 .services {
@@ -583,7 +630,7 @@ video {
 .contact {
   margin-top: 4.2rem;
   margin-top: 15px;
-  background-color: #000;
+  background: var(--dark-900);
   padding-top: 4.2rem;
 
   h2 {
@@ -658,12 +705,14 @@ video {
   bottom: 0;
   width: 100%;
   padding: 40px 0;
-  background-color: #000;
+  background: #000;
+  margin-top: 24px;
 }
 
 .footer .social {
   text-align: center;
   padding-bottom: 25px;
+  height: 60px;
 }
 
 .footer .social a {
