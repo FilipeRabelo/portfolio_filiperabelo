@@ -5,8 +5,10 @@ var sliderCounter = 0;
 var sliderContent = [
   "Developer",
   "Code",
-  "Designer",
-  "Youtube"  
+  "Recruiter",
+  "FullStack",  
+  "Frontend", 
+  "Backend",
 ];
 
 
