@@ -911,7 +911,11 @@ video {
     padding: 5rem 10% 2rem;
   }
 
-  .home-img img {
+  .line{
+    display: none; 
+  }
+
+  .home-img img{
     display: none;
   }
 
