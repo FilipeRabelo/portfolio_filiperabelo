@@ -531,19 +531,25 @@ li>a>button:hover>span:last-of-type {
 .tecnologias {
   color: #fff;
   background: var(--dark-900);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin: 0 auto;
 }
 
 .tecnologias-content {
   background: var(--dark-900);
   display: grid;
+  margin: 0 auto;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2.3rem;
+  gap: 3.3rem;
   align-items: center;
   padding-top: 4.2rem;
   padding-bottom: 1rem;
 }
 
 .tech-row {
+  /* margin: auto; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -555,7 +561,8 @@ li>a>button:hover>span:last-of-type {
   transition: all 0.3s ease;
   max-height: 200px;
   min-height: 200px;
-  /* max-width: 250px */
+  /* min-width: 350px; */
+  /* max-width: 350px */
 }
 
 .tech-row img {
@@ -575,7 +582,8 @@ li>a>button:hover>span:last-of-type {
 .portfolio-content {
   background: #bbb;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+  /* grid-template-columns: repeat(auto-fit, minmax(350px, auto)); */
+  grid-template-columns: repeat(3, 1fr);
   gap: 2.3rem;
   margin-top: 4.2rem;
   align-items: center;
@@ -892,6 +900,11 @@ video {
 }
 
 @media (max-width: 991px) {
+
+  .portfolio-content {
+    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+  }
+
   header {
     padding: 3rem 10%;
   }
