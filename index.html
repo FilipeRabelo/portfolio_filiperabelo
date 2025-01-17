@@ -1,836 +1,865 @@
 <!doctype html>
 <html lang="pt-br">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="icon" href="./img/favicon.png" type="image/x-icon">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="./img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
 
-  <script type="text/JavaScript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/JavaScript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-  <link rel="stylesheet" href="styles/style.css" type="text/css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/css/boxicons.min.css" />
-  <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+    <link rel="stylesheet" href="styles/style.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/css/boxicons.min.css" />
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
 
-  <title>Portfólio de Filipe FullStack - Desenvolvedor Full Stack</title>
+    <title>Portfólio de Filipe FullStack - Desenvolvedor Full Stack</title>
 
-  <meta name="description"
-    content="Confira o portfólio de Filipe FullStack, desenvolvedor especialista em React, Node.js, e mais.">
-  <meta name="keywords"
-    content="Filipe FullStack, desenvolvedor, portfólio, site, app, mobile, React, Node.js, full stack">
-  <meta name="robots" content="index, follow">
+    <meta name="description"
+      content="Confira o portfólio de Filipe FullStack, desenvolvedor especialista em React, Node.js, e mais.">
+    <meta name="keywords"
+      content="Filipe FullStack, desenvolvedor, portfólio, site, app, mobile, React, Node.js, full stack">
+    <meta name="robots" content="index, follow">
 
-  <style>
-    .menu.active {
-      left: 0;
-      /* Mova o menu para a posição correta */
-    }
-  </style>
+    <style>
+      .menu.active {
+        left: 0;
+        /* Mova o menu para a posição correta */
+      }
+    </style>
 
-</head>
+  </head>
 
-<body>
-  <!-- Header Section Code -->
-  <header>
+  <body>
+    <!-- Header Section Code -->
+    <header>
 
-    <div class="logo">
-      <a href="#">Portfo<span>lio.</span></a>
-    </div>
-
-    <div class="menu-btn">
-      <i class="fas fa-bars"></i>
-    </div>
-
-    <!-- <nav> -->
-    <ul class="menu">
-
-      <li>
-        <a href="#home">
-          <button type="button">
-            <span>Home</span>
-            <span class="fa-solid fa-house"></span>
-          </button>
-        </a>
-      </li>
-
-      <li>
-        <a href="#about">
-          <button type="button">
-            <span>Sobre</span>
-            <span class="fa-solid fa-address-card"></span>
-          </button>
-        </a>
-      </li>
-
-      <li>
-        <a href="#services">
-          <button type="button">
-            <span>Serviços</span>
-            <span class="fa-solid fa-sliders"></span>
-          </button>
-        </a>
-      </li>
-
-      <li>
-        <a href="#portfolio">
-          <button type="button">
-            <span>Portfolio</span>
-            <span class="fa-solid fa-mountain-sun"></span>
-          </button>
-        </a>
-      </li>
-
-      <!-- <li>
-        <a href="#certificates">
-          <button type="button">
-            <span>Certificados</span>
-            <span class="fa-solid fa-trophy"></span>
-          </button>
-        </a>
-      </li> -->
-
-      <li>
-        <a href="#projetos">
-          <button type="button">
-            <span>Projetos</span>
-            <span class="fa-solid fa-folder"></span>
-          </button>
-        </a>
-      </li>
-
-      <li>
-        <a href="#contact">
-          <button type="button">
-            <span>Contato</span>
-            <span class="fa-solid fa-headset"></span>
-          </button>
-        </a>
-      </li>
-
-    </ul>
-    <!-- </nav> -->
-  </header>
-
-  <!-- home section code -->
-
-  <section class="home" id="home">
-    <div class="featured-text">
-
-      <div class="hello">
-        <p>Hello I'm</p>
+      <div class="logo">
+        <a href="#">Portfo<span>lio.</span></a>
       </div>
 
-      <div class="featured-name">
-        <span id="SliderValue"></span>
+      <div class="menu-btn">
+        <i class="fas fa-bars"></i>
       </div>
 
-      <div class="featured-text-info">
-        <p>Meu nome é Filipe Rabelo! Sou um Desenvolvedor FullStack!</p>
+      <!-- <nav> -->
+      <ul class="menu">
+
+        <li>
+          <a href="#home">
+            <button type="button">
+              <span>Home</span>
+              <span class="fa-solid fa-house"></span>
+            </button>
+          </a>
+        </li>
+
+        <li>
+          <a href="#about">
+            <button type="button">
+              <span>Sobre</span>
+              <span class="fa-solid fa-address-card"></span>
+            </button>
+          </a>
+        </li>
+
+        <li>
+          <a href="#services">
+            <button type="button">
+              <span>Serviços</span>
+              <span class="fa-solid fa-sliders"></span>
+            </button>
+          </a>
+        </li>
+
+        <li>
+          <a href="#portfolio">
+            <button type="button">
+              <span>Portfolio</span>
+              <span class="fa-solid fa-mountain-sun"></span>
+            </button>
+          </a>
+        </li>
+
+        <!-- <li>
+          <a href="#certificates">
+            <button type="button">
+              <span>Certificados</span>
+              <span class="fa-solid fa-trophy"></span>
+            </button>
+          </a>
+        </li> -->
+
+        <li>
+          <a href="#projetos">
+            <button type="button">
+              <span>Projetos</span>
+              <span class="fa-solid fa-folder"></span>
+            </button>
+          </a>
+        </li>
+
+        <li>
+          <a href="#contact">
+            <button type="button">
+              <span>Contato</span>
+              <span class="fa-solid fa-headset"></span>
+            </button>
+          </a>
+        </li>
+
+      </ul>
+      <!-- </nav> -->
+    </header>
+
+    <!-- home section code -->
+
+    <section class="home" id="home">
+      <div class="featured-text">
+
+        <div class="hello">
+          <p>Hello I'm</p>
+        </div>
+
+        <div class="featured-name">
+          <span id="SliderValue"></span>
+        </div>
+
+        <div class="featured-text-info">
+          <p>Meu nome é Filipe Rabelo! Sou um Desenvolvedor FullStack!</p>
+        </div>
+
+        <div class="social_icons">
+          <a href="https://www.linkedin.com/in/filipe-rabelo-648799228/"><i class="bx bxl-linkedin"
+              style="color: crimson"></i></a>
+          <a href="https://github.com/FilipeRabelo"><i class="bx bxl-github" style="color: crimson"></i></a>
+          <a href="#"><i class="bx bxl-instagram" style="color: crimson"></i></a>
+          <a href="#"><i class="fab fa-dribbble" style="color: crimson"></i></a>
+        </div>
+
       </div>
 
-      <div class="social_icons">
+      <!-- <div> -->
+      <div class="home-img">
+        <!-- <img src="./img/02.png" alt="Image - Filipe Rabelo"> -->
+        <div class="heading home-img">
+          <video controls autoplay muted playsinline loop class="line">
+            <source src="video/dalyGames.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- -------------------------------------------- -->
+
+    <!-- About Section code-->
+
+    <section class="about" id="about">
+      <div class="max-width">
+        <div class="about-container">
+
+          <div class="about">
+
+            <!-- <h1 class="title_h1">Sobre</h1> -->
+
+            <p>
+              Sou Filipe Rabelo, desenvolvedor apaixonado por criar soluções inovadoras com foco em React, React Native e
+              tecnologias JavaScript como Node.js e Next.js. Tenho experiência em TypeScript, bancos de dados e um sólido
+              domínio em lógica de programação e resolução de problemas.
+            </p>
+            <p>
+              Meu objetivo é combinar funcionalidade, design e usabilidade para entregar projetos escaláveis que encantem
+              usuários e atendam às necessidades do mercado. Sempre em busca de me atualizar, estou comprometido com a
+              entrega
+              de resultados excepcionais, seja no front-end ou no back-end.
+            </p>
+
+            <div class="about_social">
+              <a href="https://www.linkedin.com/in/filipe-rabelo-648799228/"><i class="bx bxl-linkedin"
+                  style="color: crimson"></i></a>
+              <a href="https://github.com/FilipeRabelo"><i class="bx bxl-github" style="color: crimson"></i></a>
+              <a href="#"><i class="bx bxl-instagram" style="color: crimson"></i></a>
+              <a href="#"><i class="fab fa-dribbble" style="color: crimson"></i></a>
+            </div>
+
+            <a href="assets/CurriculoFilipeRabeloProgramador.pdf" class="btn-b" download="Curriculo_Filipe_Rabelo.pdf">
+              Download Cv
+            </a>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- -------------------------------------------- -->
+
+    <!-- Services Section Code -->
+
+    <section class="services " id="services">
+      <h2 class="heading"><span>Serviços</span></h2>
+
+      <div class="serv-content heading">
+
+        <div class="tecnologias-content">
+          <div class="tech-row row">
+            <img src="img/react.png" alt="">
+          </div>   
+
+          <div class="tech-row row">
+            <img src="img/imgnode.jpg" alt="">
+          </div>
+        
+          <div class="tech-row row">
+            <img src="img/python.jpeg" alt="">
+          </div>
+        </div>
+
+        <!-- ------------------------------- -->
+
+        <div class="services-list">
+          <div class="backcolordiv">
+            <i class="fa-brands fa-app-store"></i>
+            <h2>App development</h2>
+            <p>
+              Desenvolvimento de aplicações móveis utilizando React Native, proporcionando uma experiência fluida e nativa
+              para
+              usuários em diversas plataformas.
+              Com foco em usabilidade e performance, busco sempre implementar as melhores práticas de design e
+              desenvolvimento.
+            </p>
+            <!-- <a href="#">Learn more...</a> -->
+          </div>
+
+          <div class="backcolordiv">
+            <i class="fa-solid fa-code"></i>
+            <h2>Web development</h2>
+            <p>
+              Criação de aplicações web dinâmicas e responsivas com React e Next.js, garantindo uma interface de usuário
+              intuitiva e
+              eficiente.
+              Meu conhecimento em HTML, CSS e JavaScript me permite entregar projetos que não só funcionam bem, mas também
+              são
+              visualmente atraentes.
+            </p>
+            <!-- <a href="#">Learn more...</a> -->
+          </div>
+
+          <div class="backcolordiv">
+            <i class="fa-solid fa-server"></i>
+            <h2>Backend development</h2>
+            <p>
+              Desenvolvimento de APIs e serviços backend utilizando Node.js e Python, com ênfase na criação de soluções escaláveis
+              e seguras.
+              Minha experiência com bancos de dados permite que eu integre eficazmente o frontend e o backend, garantindo
+              um fluxo
+              de dados otimizado.
+            </p>
+            <!-- <a href="#">Learn more...</a> -->
+          </div>
+        </div>     
+
+      </div>
+    </section>
+
+    <!-- -------------------------------------------- -->
+
+    <!-- Portfolio Section code-->
+
+    <section class="portfolio" id="portfolio">
+
+      <h2 class="heading colorBlack"><span>Portfolio</span></h2>
+
+      <div class="portfolio-content">
+
+        <!-- Agenda medica app-->
+        <div class="row">
+          <!-- <img src="img/pizzaria.jpg" alt=""> -->
+          <video controls autoplay muted playsinline loop>
+            <source src="video/agenda-reactnative.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+
+          <div class="main-row">
+            <div class="row-text">
+              <h5>App Agenda Médica</h5>
+            </div>
+            <div class="row-icon"">
+              <a href=" https://github.com/FilipeRabelo/app-agendei-mobile">
+              <i class="bx bxl-github"></i>
+              </a>
+            </div>
+          </div>
+
+          <h4>React-native</h4>
+
+          <span>
+            <a class="verPagina" href="https://github.com/FilipeRabelo/app-agendei-mobile">Ver página</a>
+          </span>
+
+        </div>
+
+        <!-- pizzaria app-->
+        <div class="row">
+          <!-- <img src="img/pizzaria.jpg" alt=""> -->
+          <video controls autoplay muted playsinline loop>
+            <source src="video/appReactnative-pizaria.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+
+          <div class="main-row">
+            <div class="row-text">
+              <h5>App Pizzaria - Mobile</h5>
+            </div>
+            <div class="row-icon"">
+                        <a href=" https://github.com/FilipeRabelo/app-pizzaria-reactNative">
+              <i class="bx bxl-github"></i>
+              </a>
+            </div>
+          </div>
+
+          <h4>React-native - FireBase</h4>
+
+          <span>
+            <a class="verPagina" href="https://pizzaria-frontendbuild.vercel.app/">Ver página</a>
+          </span>
+
+        </div>
+
+
+        <!-- pizzaria -->
+        <div class="row">
+
+          <video controls autoplay muted playsinline loop>
+            <source src="video/pizzaria.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+
+          <div class="main-row">
+            <div class="row-text">
+              <h5>App Pizzaria - Web</h5>
+            </div>
+            <div class="row-icon">
+              <a href="https://github.com/FilipeRabelo/pizzariaKatuneggi">
+                <i class="bx bxl-github"></i>
+              </a>
+            </div>
+          </div>
+
+          <h4>Next.js - React - Node.js</h4>
+
+          <span>
+            <a class="verPagina" href="https://github.com/FilipeRabelo/pizzariaKatuneggi">Ver página</a>
+          </span>
+
+        </div>
+
+        <!-- Daly Games -->
+        <div class="row">
+
+          <video controls autoplay muted playsinline loop>
+            <source src="video/dalyGames.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+
+          <div class="main-row">
+            <div class="row-text">
+              <h5>App Daly Games</h5>
+            </div>
+            <div class="row-icon">
+              <a href="https://github.com/FilipeRabelo/app-next-dalyGames">
+                <i class="bx bxl-github"></i>
+              </a>
+            </div>
+          </div>
+
+          <h4>Next.js - Tailwind CSS</h4>
+
+          <span>
+            <a class="verPagina" href="https://app-next-daly-games.vercel.app/">Ver página</a>
+          </span>
+
+        </div>
+
+
+        <!-- primeCine -->
+        <div class="row">
+
+          <video controls autoplay muted playsinline loop>
+            <source src="video/prime-filmes-web.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+
+          <div class="main-row">
+            <div class="row-text">
+              <h5>Web - App development</h5>
+            </div>
+            <div class="row-icon">
+              <a href="https://github.com/FilipeRabelo/prime">
+                <i class="bx bxl-github"></i>
+              </a>
+            </div>
+          </div>
+
+          <h4>React.Js</h4>
+
+          <span>
+            <a class="verPagina" href="https://prime-lilac.vercel.app/">Ver página</a>
+          </span>
+
+        </div>
+
+
+        <!-- spotifyClone -->
+        <div class="row">
+          <video controls autoplay muted playsinline loop>
+            <source src="video/spotify.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+
+          <div class="main-row">
+            <div class="row-text">
+              <h5>Web development</h5>
+            </div>
+            <div class="row-icon">
+              <a href="https://github.com/FilipeRabelo/cloneSpotify">
+                <i class="bx bxl-github"></i>
+              </a>
+            </div>
+          </div>
+
+          <h4>Html5 - Css3 - BootsTrap</h4>
+
+          <span>
+            <a class="verPagina" href="https://filiperabelo.github.io/cloneSpotify/">Ver página</a>
+          </span>
+
+        </div>
+
+
+        <!-- siteFinancies -->
+        <div class="row">
+
+          <video controls autoplay muted playsinline loop>
+            <source src="video/finances.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+
+          <div class="main-row">
+            <div class="row-text">
+              <h5>Web development</h5>
+            </div>
+            <div class="row-icon">
+              <a href="https://github.com/FilipeRabelo/ProjetoSiteFinans">
+                <i class="bx bxl-github"></i>
+              </a>
+            </div>
+          </div>
+
+          <h4>Html5 - Css3 - BootsTrap</h4>
+
+          <span>
+            <a class="verPagina" href="https://filiperabelo.github.io/ProjetoSiteFinans/">Ver página</a>
+          </span>
+        </div>
+
+
+        <!-- matamosquito -->
+        <div class="row">
+
+          <video controls autoplay muted playsinline loop>
+            <source src="video/matamosquito.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+
+          <div class="main-row">
+            <div class="row-text">
+              <h5>Web development</h5>
+            </div>
+            <div class="row-icon">
+              <a href="https://github.com/FilipeRabelo/jgMataMosquito">
+                <i class="bx bxl-github"></i>
+              </a>
+            </div>
+          </div>
+
+          <h4>Html5 - Css3 - JavaScript</h4>
+
+          <span>
+            <a class="verPagina" href="https://filiperabelo.github.io/jgMataMosquito">Ver página</a>
+          </span>
+        </div>
+
+
+        <!-- foto blog -->
+        <div class="row">
+
+          <video controls autoplay muted playsinline loop>
+            <source src="video/foto-blog.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+
+          <div class="main-row">
+            <div class="row-text">
+              <h5>Web development</h5>
+            </div>
+            <div class="row-icon">
+              <a href="https://github.com/FilipeRabelo/fotoBlog">
+                <i class="bx bxl-github"></i>
+              </a>
+            </div>
+          </div>
+
+          <h4>Html5 - Css3 - Animated</h4>
+
+          <span>
+            <a class="verPagina" href="https://filiperabelo.github.io/fotoBlog/">Ver página</a>
+          </span>
+
+        </div>
+
+
+        <!-- github_favoritos -->
+        <!-- <div class="row">
+
+          <video controls autoplay muted playsinline loop>
+            <source src="video/githubFavorit.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+
+          <div class="main-row">
+            <div class="row-text">
+              <h5>Backend development</h5>
+            </div>
+            <div class="row-icon">
+              <a href="https://github.com/FilipeRabelo/projetoGitHubFavorito01">
+                <i class="bx bxl-github"></i>
+              </a>
+            </div>
+          </div>
+
+          <h4>Request Api - JavaScript</h4>
+
+          <span>
+            <a class="verPagina" href="https://filiperabelo.github.io/projetoGitHubFavorito01/">Ver página</a>
+          </span>
+
+        </div> -->
+
+      </div>
+    </section>
+
+    <!-- -------------------------------------------- -->
+
+    <!-- Certificates Section code-->
+
+    <!-- <section class="certificados" id="certificates">
+
+      <h2 class="heading"><span>Certificados</span></h2>
+
+      <div class="certificados-content">
+
+        <div class="row">
+          <img class="imgCertificado" src="imgCertificados/lifwatylw.PNG" />
+        </div>
+
+        <div class="row">
+          <img class="imgCertificado" src="imgCertificados/certificado-node.js-react-reactNative-typescript.jpg" />
+        </div>
+
+        <div class="row">
+          <img class="imgCertificado" src="imgCertificados/jsNode.jpg" />
+        </div>
+
+        <div class="row">
+          <img class="imgCertificado" src="imgCertificados/Certificado-Git-GitHubjpg.jpg" />
+        </div>
+
+        <div class="row">
+          <img class="imgCertificado" src="imgCertificados/certificadoFotoSQL.jpg" />
+        </div>
+
+        <div class="row">
+          <img class="imgCertificado" src="imgCertificados/certificadoAlgoritmoslogicadeprogramacao.jpg" />
+        </div>
+
+      </div>
+    </section> -->
+
+    <!-- -------------------------------------------- -->
+
+    <!-- projetos feitos section code-->
+
+    <section class="servicesProjetos" id="projetos">
+      <h2 class="heading"><span>Projetos Realizados</span></h2>
+
+      <div class="serv-content heading">
+        <div class="services-listProjetos">
+
+          <div>
+            <i class="fa-solid fa-gamepad"></i>
+
+            <h2>Daly Games</h2>
+            <p>
+              Aplicativo em Next.js que apresenta os melhores lançamentos de videogames, com atualização em tempo real via
+              API. Utilize React e Tailwind CSS para uma interface moderna e responsiva, otimizando desempenho, SEO e
+              experiência do usuário.
+            </p>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-stethoscope"></i>
+
+            <h2>Agenda Médica</h2>
+            <p>
+              Agendei é um app de agendamento de consultas médicas em React Native, com interface intuitiva, lembretes
+              automáticos, integração com calendários e acesso rápido a médicos.
+            </p>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-clapperboard"></i>
+
+            <h2>PrimeCine</h2>
+            <p>
+              App responsivo em React que permite explorar filmes populares com chamadas dinâmicas a uma API,
+              proporcionando uma experiência imersiva para os usuários.
+            </p>
+            <!-- <a href="#">Learn more...</a> -->
+          </div>
+
+          <div>
+            <i class="fa-solid fa-pizza-slice"></i>
+            <h2>System Pizzaria</h2>
+            <p>
+              Sistema desenvolvido em Next.js, React, Node.js e TypeScript, focado na gestão eficiente de pizzarias,
+              facilitando o controle de pedidos e operações.
+            </p>
+            <!-- <a href="#">Learn more...</a> -->
+          </div>
+
+          <div>
+            <i class="fa-solid fa-utensils"></i>
+            <h2>App Pizzaria</h2>
+            <p>
+              Aplicativo em React Native que integra gerenciamento de estado e uma API para personalização de pedidos,
+              garantindo uma navegação fluida e intuitiva.
+            </p>
+            <!-- <a href="#">Learn more...</a> -->
+          </div>
+
+          <div>
+            <i class="fa-solid fa-gamepad"></i>
+            <h2>Mosquito Hunter</h2>
+            <p>
+              Jogo envolvente em HTML, CSS e JavaScript que desafia os reflexos dos jogadores na missão de eliminar
+              mosquitos, proporcionando diversão e entretenimento.
+            </p>
+            <!-- <a href="#">Learn more...</a> -->
+          </div>
+
+          <div>
+            <i class="fa-solid fa-scissors"></i>
+            <h2>Barbearia</h2>
+            <p>
+              Aplicativo em HTML, CSS, JavaScript e PHP, projetado para a gestão de agendamentos e pagamentos em
+              barbearias, facilitando a administração do negócio.
+            </p>
+            <!-- <a href="#">Learn more...</a> -->
+          </div>
+
+          <div>
+            <i class="fa-solid fa-code-branch"></i>
+            <h2>GitHub Explorer</h2>
+            <p>
+              App em ReactJS que permite a navegação intuitiva por repositórios do GitHub, oferecendo uma experiência
+              prática para desenvolvedores.
+            </p>
+            <!-- <a href="#">Learn more...</a> -->
+          </div>
+
+          <div>
+            <i class="fa-solid fa-camera"></i>
+            <h2>FotoBlog</h2>
+            <p>
+              Blog de fotografia moderno, desenvolvido com HTML e CSS avançado, apresentando um layout responsivo ideal
+              para exibir fotos e artigos.
+            </p>
+            <!-- <a href="#">Learn more...</a> -->
+          </div>
+
+          <div>
+            <i class="fa-solid fa-music"></i>
+            <h2>Clone do Spotify</h2>
+            <p>
+              Projeto de clone do Spotify utilizando HTML5, CSS3 e Bootstrap, oferecendo uma interface semelhante à
+              plataforma original.
+            </p>
+            <!-- <a href="#">Learn more...</a> -->
+          </div>
+
+          <div>
+            <i class="fa-solid fa-chart-line"></i>
+            <h2>Finance Software Site</h2>
+            <p>
+              Site de software de finanças desenvolvido em HTML5, CSS3 e Bootstrap, voltado para gestão financeira de
+              usuários.
+            </p>
+            <!-- <a href="#">Learn more...</a> -->
+          </div>
+
+          <div>
+            <i class="fa-solid fa-map-marker-alt"></i>
+            <h2>CEP Finder</h2>
+            <p>
+              Aplicativo em React Native que busca endereços completos através do CEP, com uma interface limpa e
+              integração com mapas.
+            </p>
+            <!-- <a href="#">Learn more...</a> -->
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- -------------------------------------------- -->
+
+    <!-- Contact Section code -->
+
+    <main class="contact heading" id="contact">
+      <h2 class="heading colorBlack"><span>Contato</span></h2>
+
+      <h3 class="heading headingContato colorBlack">
+        Se você precisa de um site profissional, sistema empresarial ou um app mobile para impulsionar o seu negócio,
+        Vamos conversar! <br /> <br />Estou comprometido em oferecer soluções eficientes, <br />
+        inovadoras e de alta qualidade para garantir o sucesso dos seus projetos.
+      </h3>
+
+      <form id="contact-form" style="width: 90%">
+        <div class="input-box">
+          <input type="text" name="user_name" placeholder="Seu nome">
+          <input type="email" name="user_email" placeholder="Email para contato">
+        </div>
+
+        <div class="input-box">
+          <input type="number" name="user_phone" placeholder="Telefone">
+          <input type="text" name="subject" placeholder="Assunto">
+          <textarea class="textAreaContact" name="message" cols="30" rows="10" placeholder="Sua mensagem"></textarea>
+        </div>
+
+        <button type="submit" class="btn-t ">Entrar em contato</button>
+      </form>
+
+      <!-- Botão de WhatsApp -->
+      <div class="whatsapp-button ">
+        <a href="https://wa.me/5531984453924?text=Olá%20Filipe,%20gostaria%20de%20entrar%20em%20contato%20sobre%20seu%20portfólio!"
+          target="_blank">
+          <button type="button" class="btn-whatsapp">
+            <span class="textWhats">Contate-me no WhatsApp.</span>
+            <i class="fab fa-whatsapp"></i>
+          </button>
+        </a>
+      </div>
+
+    </main>
+
+    <!-- -------------------------------------------- -->
+
+    <!-- Footer Section Code-->
+
+    <footer class="footer">
+
+      <div class="social">
         <a href="https://www.linkedin.com/in/filipe-rabelo-648799228/"><i class="bx bxl-linkedin"
             style="color: crimson"></i></a>
         <a href="https://github.com/FilipeRabelo"><i class="bx bxl-github" style="color: crimson"></i></a>
         <a href="#"><i class="bx bxl-instagram" style="color: crimson"></i></a>
-        <a href="#"><i class="fab fa-dribbble" style="color: crimson"></i></a>
+        <a href="#"><i class="bx bxl-facebook" style="color: crimson"></i></a>
       </div>
 
-    </div>
+      <p class="copyright">
+        &copy; Filipe Rabelo | 2024
+      </p>
 
-    <!-- <div> -->
-    <div class="home-img">
-      <!-- <img src="./img/02.png" alt="Image - Filipe Rabelo"> -->
-      <div class="heading home-img">
-        <video controls autoplay muted playsinline loop class="line">
-          <source src="video/dalyGames.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </div>
-    </div>
+    </footer>
 
-  </section>
+    <!-- -------------------------------------------- -->
 
-  <!-- About Section code-->
+    <script type="text/JavaScript" src="https://unpkg.com/scrollreveal"></script>
+    <script type="text/JavaScript" src="scripts/script.js"></script>
 
-  <section class="about" id="about">
-    <div class="max-width">
-      <div class="about-container">
+    <!-- envio do formulario com emailjs -->
 
-        <div class="about">
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
 
-          <!-- <h1 class="title_h1">Sobre</h1> -->
+    <script type="text/javascript">
+      (function () {
+        emailjs.init('RL4fWra5TdKQLNExn');  // Substitua 'YOUR_USER_ID' pelo seu ID de usuário do EmailJS
+      })();
 
-        <p>
-          Sou Filipe Rabelo, desenvolvedor apaixonado por criar soluções inovadoras com foco em React, React Native e
-          tecnologias JavaScript como Node.js e Next.js. Tenho experiência em TypeScript, bancos de dados e um sólido
-          domínio em lógica de programação e resolução de problemas.
-        </p>
-        <p>
-          Meu objetivo é combinar funcionalidade, design e usabilidade para entregar projetos escaláveis que encantem
-          usuários e atendam às necessidades do mercado. Sempre em busca de me atualizar, estou comprometido com a entrega
-          de resultados excepcionais, seja no front-end ou no back-end.
-        </p>
+      document.getElementById('contact-form').addEventListener('submit', function (event) {
+        event.preventDefault();       // Evita o comportamento padrão de recarregar a página
 
-          <div class="about_social">
-            <a href="https://www.linkedin.com/in/filipe-rabelo-648799228/"><i class="bx bxl-linkedin"
-                style="color: crimson"></i></a>
-            <a href="https://github.com/FilipeRabelo"><i class="bx bxl-github" style="color: crimson"></i></a>
-            <a href="#"><i class="bx bxl-instagram" style="color: crimson"></i></a>
-            <a href="#"><i class="fab fa-dribbble" style="color: crimson"></i></a>
-          </div>
+        emailjs.sendForm('service_en95kxs', 'template_1bvpmxq', this)
+          .then(function () {
+            alert('Mensagem enviada com sucesso!');
+            window.location.reload();  // Recarrega a página após o envio
+            return false;
+          }, function (error) {
+            alert('Erro ao enviar, tente novamente!');
+            window.location.reload();  // Recarrega a página após o envio
+            return false;
+          });
+      });
+    </script>
 
-          <a href="assets/CurriculoFilipeRabeloProgramador.pdf" class="btn-b" download="Curriculo_Filipe_Rabelo.pdf">
-            Download Cv
-          </a>
 
-        </div>
+    <script type="text/javascript">
 
-      </div>
-    </div>
-  </section>
+      document.addEventListener('DOMContentLoaded', function () {
+        const menuBtn = document.querySelector('.menu-btn');
+        const menu = document.querySelector('.menu');
 
-  <!-- Services Section Code -->
-
-  <section class="services " id="services">
-    <h2 class="heading"><span>Serviços</span></h2>
-
-    <div class="serv-content heading">
-      <div class="services-list">
-
-        <div class="backcolordiv">
-          <i class="fa-brands fa-app-store"></i>
-          <h2>App development</h2>
-          <p>
-            Desenvolvimento de aplicações móveis utilizando React Native, proporcionando uma experiência fluida e nativa
-            para
-            usuários em diversas plataformas.
-            Com foco em usabilidade e performance, busco sempre implementar as melhores práticas de design e
-            desenvolvimento.
-          </p>
-          <!-- <a href="#">Learn more...</a> -->
-        </div>
-
-        <div class="backcolordiv">
-          <i class="fa-solid fa-code"></i>
-          <h2>Web development</h2>
-          <p>
-            Criação de aplicações web dinâmicas e responsivas com React e Next.js, garantindo uma interface de usuário
-            intuitiva e
-            eficiente.
-            Meu conhecimento em HTML, CSS e JavaScript me permite entregar projetos que não só funcionam bem, mas também
-            são
-            visualmente atraentes.
-          </p>
-          <!-- <a href="#">Learn more...</a> -->
-        </div>
-
-        <div class="backcolordiv">
-          <i class="fa-solid fa-server"></i>
-          <h2>Backend development</h2>
-          <p>
-            Desenvolvimento de APIs e serviços backend utilizando Node.js, com ênfase na criação de soluções escaláveis
-            e seguras.
-            Minha experiência com bancos de dados permite que eu integre eficazmente o frontend e o backend, garantindo
-            um fluxo
-            de dados otimizado.
-          </p>
-          <!-- <a href="#">Learn more...</a> -->
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-
-  <!-- Portfolio Section code-->
-
-  <section class="portfolio" id="portfolio">
-
-    <h2 class="heading colorBlack"><span>Portfolio</span></h2>
-
-    <div class="portfolio-content">
-
-      <!-- Agenda medica app-->
-      <div class="row">
-        <!-- <img src="img/pizzaria.jpg" alt=""> -->
-        <video controls autoplay muted playsinline loop>
-          <source src="video/agenda-reactnative.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-
-        <div class="main-row">
-          <div class="row-text">
-            <h5>App Agenda Médica</h5>
-          </div>
-          <div class="row-icon"">
-            <a href=" https://github.com/FilipeRabelo/app-agendei-mobile">
-            <i class="bx bxl-github"></i>
-            </a>
-          </div>
-        </div>
-
-        <h4>React-native</h4>
-
-        <span>
-          <a class="verPagina" href="https://github.com/FilipeRabelo/app-agendei-mobile">Ver página</a>
-        </span>
-
-      </div>
-
-      <!-- pizzaria app-->
-      <div class="row">
-        <!-- <img src="img/pizzaria.jpg" alt=""> -->
-        <video controls autoplay muted playsinline loop>
-          <source src="video/appReactnative-pizaria.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-
-        <div class="main-row">
-          <div class="row-text">
-            <h5>App Pizzaria - Mobile</h5>
-          </div>
-          <div class="row-icon"">
-                      <a href=" https://github.com/FilipeRabelo/app-pizzaria-reactNative">
-            <i class="bx bxl-github"></i>
-            </a>
-          </div>
-        </div>
-
-        <h4>React-native - FireBase</h4>
-
-        <span>
-          <a class="verPagina" href="https://pizzaria-frontendbuild.vercel.app/">Ver página</a>
-        </span>
-
-      </div>
-
-
-      <!-- pizzaria -->
-      <div class="row">
-
-        <video controls autoplay muted playsinline loop>
-          <source src="video/pizzaria.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-
-        <div class="main-row">
-          <div class="row-text">
-            <h5>App Pizzaria - Web</h5>
-          </div>
-          <div class="row-icon">
-            <a href="https://github.com/FilipeRabelo/pizzariaKatuneggi">
-              <i class="bx bxl-github"></i>
-            </a>
-          </div>
-        </div>
-
-        <h4>Next.js - React - Node.js</h4>
-
-        <span>
-          <a class="verPagina" href="https://github.com/FilipeRabelo/pizzariaKatuneggi">Ver página</a>
-        </span>
-
-      </div>
-
-      <!-- Daly Games -->
-      <div class="row">
-
-        <video controls autoplay muted playsinline loop>
-          <source src="video/dalyGames.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-
-        <div class="main-row">
-          <div class="row-text">
-            <h5>App Daly Games</h5>
-          </div>
-          <div class="row-icon">
-            <a href="https://github.com/FilipeRabelo/app-next-dalyGames">
-              <i class="bx bxl-github"></i>
-            </a>
-          </div>
-        </div>
-
-        <h4>Next.js - Tailwind CSS</h4>
-
-        <span>
-          <a class="verPagina" href="https://app-next-daly-games.vercel.app/">Ver página</a>
-        </span>
-
-      </div>
-
-
-      <!-- primeCine -->
-      <div class="row">
-
-        <video controls autoplay muted playsinline loop>
-          <source src="video/prime-filmes-web.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-
-        <div class="main-row">
-          <div class="row-text">
-            <h5>Web - App development</h5>
-          </div>
-          <div class="row-icon">
-            <a href="https://github.com/FilipeRabelo/prime">
-              <i class="bx bxl-github"></i>
-            </a>
-          </div>
-        </div>
-
-        <h4>React.Js</h4>
-
-        <span>
-          <a class="verPagina" href="https://prime-lilac.vercel.app/">Ver página</a>
-        </span>
-
-      </div>
-
-
-      <!-- spotifyClone -->
-      <div class="row">
-        <video controls autoplay muted playsinline loop>
-          <source src="video/spotify.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-
-        <div class="main-row">
-          <div class="row-text">
-            <h5>Web development</h5>
-          </div>
-          <div class="row-icon">
-            <a href="https://github.com/FilipeRabelo/cloneSpotify">
-              <i class="bx bxl-github"></i>
-            </a>
-          </div>
-        </div>
-
-        <h4>Html5 - Css3 - BootsTrap</h4>
-
-        <span>
-          <a class="verPagina" href="https://filiperabelo.github.io/cloneSpotify/">Ver página</a>
-        </span>
-
-      </div>
-
-
-      <!-- siteFinancies -->
-      <div class="row">
-
-        <video controls autoplay muted playsinline loop>
-          <source src="video/finances.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-
-        <div class="main-row">
-          <div class="row-text">
-            <h5>Web development</h5>
-          </div>
-          <div class="row-icon">
-            <a href="https://github.com/FilipeRabelo/ProjetoSiteFinans">
-              <i class="bx bxl-github"></i>
-            </a>
-          </div>
-        </div>
-
-        <h4>Html5 - Css3 - BootsTrap</h4>
-
-        <span>
-          <a class="verPagina" href="https://filiperabelo.github.io/ProjetoSiteFinans/">Ver página</a>
-        </span>
-      </div>
-
-
-      <!-- matamosquito -->
-      <div class="row">
-
-        <video controls autoplay muted playsinline loop>
-          <source src="video/matamosquito.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-
-        <div class="main-row">
-          <div class="row-text">
-            <h5>Web development</h5>
-          </div>
-          <div class="row-icon">
-            <a href="https://github.com/FilipeRabelo/jgMataMosquito">
-              <i class="bx bxl-github"></i>
-            </a>
-          </div>
-        </div>
-
-        <h4>Html5 - Css3 - JavaScript</h4>
-
-        <span>
-          <a class="verPagina" href="https://filiperabelo.github.io/jgMataMosquito">Ver página</a>
-        </span>
-      </div>
-
-
-      <!-- foto blog -->
-      <div class="row">
-
-        <video controls autoplay muted playsinline loop>
-          <source src="video/foto-blog.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-
-        <div class="main-row">
-          <div class="row-text">
-            <h5>Web development</h5>
-          </div>
-          <div class="row-icon">
-            <a href="https://github.com/FilipeRabelo/fotoBlog">
-              <i class="bx bxl-github"></i>
-            </a>
-          </div>
-        </div>
-
-        <h4>Html5 - Css3 - Animated</h4>
-
-        <span>
-          <a class="verPagina" href="https://filiperabelo.github.io/fotoBlog/">Ver página</a>
-        </span>
-
-      </div>
-
-
-      <!-- github_favoritos -->
-      <!-- <div class="row">
-
-        <video controls autoplay muted playsinline loop>
-          <source src="video/githubFavorit.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-
-        <div class="main-row">
-          <div class="row-text">
-            <h5>Backend development</h5>
-          </div>
-          <div class="row-icon">
-            <a href="https://github.com/FilipeRabelo/projetoGitHubFavorito01">
-              <i class="bx bxl-github"></i>
-            </a>
-          </div>
-        </div>
-
-        <h4>Request Api - JavaScript</h4>
-
-        <span>
-          <a class="verPagina" href="https://filiperabelo.github.io/projetoGitHubFavorito01/">Ver página</a>
-        </span>
-
-      </div> -->
-
-    </div>
-  </section>
-
-
-  <!-- Certificates Section code-->
-
-  <!-- <section class="certificados" id="certificates">
-
-    <h2 class="heading"><span>Certificados</span></h2>
-
-    <div class="certificados-content">
-
-      <div class="row">
-        <img class="imgCertificado" src="imgCertificados/lifwatylw.PNG" />
-      </div>
-
-      <div class="row">
-        <img class="imgCertificado" src="imgCertificados/certificado-node.js-react-reactNative-typescript.jpg" />
-      </div>
-
-      <div class="row">
-        <img class="imgCertificado" src="imgCertificados/jsNode.jpg" />
-      </div>
-
-      <div class="row">
-        <img class="imgCertificado" src="imgCertificados/Certificado-Git-GitHubjpg.jpg" />
-      </div>
-
-      <div class="row">
-        <img class="imgCertificado" src="imgCertificados/certificadoFotoSQL.jpg" />
-      </div>
-
-      <div class="row">
-        <img class="imgCertificado" src="imgCertificados/certificadoAlgoritmoslogicadeprogramacao.jpg" />
-      </div>
-
-    </div>
-  </section> -->
-
-
-  <!-- projetos feitos section code-->
-
-  <section class="servicesProjetos" id="projetos">
-    <h2 class="heading"><span>Projetos Realizados</span></h2>
-
-    <div class="serv-content heading">
-      <div class="services-listProjetos">
-
-        <div>
-          <i class="fa-solid fa-gamepad"></i>
-
-          <h2>Daly Games</h2>
-          <p>
-            Aplicativo em Next.js que apresenta os melhores lançamentos de videogames, com atualização em tempo real via
-            API. Utilize React e Tailwind CSS para uma interface moderna e responsiva, otimizando desempenho, SEO e
-            experiência do usuário.
-          </p>
-        </div>
-
-        <div>
-          <i class="fa-solid fa-stethoscope"></i>
-
-          <h2>Agenda Médica</h2>
-          <p>
-            Agendei é um app de agendamento de consultas médicas em React Native, com interface intuitiva, lembretes
-            automáticos, integração com calendários e acesso rápido a médicos.
-          </p>
-        </div>
-
-        <div>
-          <i class="fa-solid fa-clapperboard"></i>
-
-          <h2>PrimeCine</h2>
-          <p>
-            App responsivo em React que permite explorar filmes populares com chamadas dinâmicas a uma API,
-            proporcionando uma experiência imersiva para os usuários.
-          </p>
-          <!-- <a href="#">Learn more...</a> -->
-        </div>
-
-        <div>
-          <i class="fa-solid fa-pizza-slice"></i>
-          <h2>System Pizzaria</h2>
-          <p>
-            Sistema desenvolvido em Next.js, React, Node.js e TypeScript, focado na gestão eficiente de pizzarias,
-            facilitando o controle de pedidos e operações.
-          </p>
-          <!-- <a href="#">Learn more...</a> -->
-        </div>
-
-        <div>
-          <i class="fa-solid fa-utensils"></i>
-          <h2>App Pizzaria</h2>
-          <p>
-            Aplicativo em React Native que integra gerenciamento de estado e uma API para personalização de pedidos,
-            garantindo uma navegação fluida e intuitiva.
-          </p>
-          <!-- <a href="#">Learn more...</a> -->
-        </div>
-
-        <div>
-          <i class="fa-solid fa-gamepad"></i>
-          <h2>Mosquito Hunter</h2>
-          <p>
-            Jogo envolvente em HTML, CSS e JavaScript que desafia os reflexos dos jogadores na missão de eliminar
-            mosquitos, proporcionando diversão e entretenimento.
-          </p>
-          <!-- <a href="#">Learn more...</a> -->
-        </div>
-
-        <div>
-          <i class="fa-solid fa-scissors"></i>
-          <h2>Barbearia</h2>
-          <p>
-            Aplicativo em HTML, CSS, JavaScript e PHP, projetado para a gestão de agendamentos e pagamentos em
-            barbearias, facilitando a administração do negócio.
-          </p>
-          <!-- <a href="#">Learn more...</a> -->
-        </div>
-
-        <div>
-          <i class="fa-solid fa-code-branch"></i>
-          <h2>GitHub Explorer</h2>
-          <p>
-            App em ReactJS que permite a navegação intuitiva por repositórios do GitHub, oferecendo uma experiência
-            prática para desenvolvedores.
-          </p>
-          <!-- <a href="#">Learn more...</a> -->
-        </div>
-
-        <div>
-          <i class="fa-solid fa-camera"></i>
-          <h2>FotoBlog</h2>
-          <p>
-            Blog de fotografia moderno, desenvolvido com HTML e CSS avançado, apresentando um layout responsivo ideal
-            para exibir fotos e artigos.
-          </p>
-          <!-- <a href="#">Learn more...</a> -->
-        </div>
-
-        <div>
-          <i class="fa-solid fa-music"></i>
-          <h2>Clone do Spotify</h2>
-          <p>
-            Projeto de clone do Spotify utilizando HTML5, CSS3 e Bootstrap, oferecendo uma interface semelhante à
-            plataforma original.
-          </p>
-          <!-- <a href="#">Learn more...</a> -->
-        </div>
-
-        <div>
-          <i class="fa-solid fa-chart-line"></i>
-          <h2>Finance Software Site</h2>
-          <p>
-            Site de software de finanças desenvolvido em HTML5, CSS3 e Bootstrap, voltado para gestão financeira de
-            usuários.
-          </p>
-          <!-- <a href="#">Learn more...</a> -->
-        </div>
-
-        <div>
-          <i class="fa-solid fa-map-marker-alt"></i>
-          <h2>CEP Finder</h2>
-          <p>
-            Aplicativo em React Native que busca endereços completos através do CEP, com uma interface limpa e
-            integração com mapas.
-          </p>
-          <!-- <a href="#">Learn more...</a> -->
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-
-  <!-- Contact Section code -->
-
-  <main class="contact heading" id="contact">
-    <h2 class="heading colorBlack"><span>Contato</span></h2>
-
-    <h3 class="heading headingContato colorBlack">
-      Se você precisa de um site profissional, sistema empresarial ou um app mobile para impulsionar o seu negócio,
-      Vamos conversar! <br /> <br />Estou comprometido em oferecer soluções eficientes, <br />
-      inovadoras e de alta qualidade para garantir o sucesso dos seus projetos.
-    </h3>
-
-    <form id="contact-form" style="width: 90%">
-      <div class="input-box">
-        <input type="text" name="user_name" placeholder="Seu nome">
-        <input type="email" name="user_email" placeholder="Email para contato">
-      </div>
-
-      <div class="input-box">
-        <input type="number" name="user_phone" placeholder="Telefone">
-        <input type="text" name="subject" placeholder="Assunto">
-        <textarea class="textAreaContact" name="message" cols="30" rows="10" placeholder="Sua mensagem"></textarea>
-      </div>
-
-      <button type="submit" class="btn-t ">Entrar em contato</button>
-    </form>
-
-    <!-- Botão de WhatsApp -->
-    <div class="whatsapp-button ">
-      <a href="https://wa.me/5531984453924?text=Olá%20Filipe,%20gostaria%20de%20entrar%20em%20contato%20sobre%20seu%20portfólio!"
-        target="_blank">
-        <button type="button" class="btn-whatsapp">
-          <span class="textWhats">Contate-me no WhatsApp.</span>
-          <i class="fab fa-whatsapp"></i>
-        </button>
-      </a>
-    </div>
-
-  </main>
-
-  <!-- Footer Section Code-->
-
-  <footer class="footer">
-
-    <div class="social">
-      <a href="https://www.linkedin.com/in/filipe-rabelo-648799228/"><i class="bx bxl-linkedin"
-          style="color: crimson"></i></a>
-      <a href="https://github.com/FilipeRabelo"><i class="bx bxl-github" style="color: crimson"></i></a>
-      <a href="#"><i class="bx bxl-instagram" style="color: crimson"></i></a>
-      <a href="#"><i class="bx bxl-facebook" style="color: crimson"></i></a>
-    </div>
-
-    <p class="copyright">
-      &copy; Filipe Rabelo | 2024
-    </p>
-
-  </footer>
-
-  <script type="text/JavaScript" src="https://unpkg.com/scrollreveal"></script>
-  <script type="text/JavaScript" src="scripts/script.js"></script>
-
-  <!-- envio do formulario com emailjs -->
-
-  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-
-  <script type="text/javascript">
-    (function () {
-      emailjs.init('RL4fWra5TdKQLNExn');  // Substitua 'YOUR_USER_ID' pelo seu ID de usuário do EmailJS
-    })();
-
-    document.getElementById('contact-form').addEventListener('submit', function (event) {
-      event.preventDefault();       // Evita o comportamento padrão de recarregar a página
-
-      emailjs.sendForm('service_en95kxs', 'template_1bvpmxq', this)
-        .then(function () {
-          alert('Mensagem enviada com sucesso!');
-          window.location.reload();  // Recarrega a página após o envio
-          return false;
-        }, function (error) {
-          alert('Erro ao enviar, tente novamente!');
-          window.location.reload();  // Recarrega a página após o envio
-          return false;
+        menuBtn.addEventListener('click', function () {
+          menu.classList.toggle('active');
+          menuBtn.classList.toggle('active');
         });
-    });
-  </script>
 
-
-  <script type="text/javascript">
-
-    document.addEventListener('DOMContentLoaded', function () {
-      const menuBtn = document.querySelector('.menu-btn');
-      const menu = document.querySelector('.menu');
-
-      menuBtn.addEventListener('click', function () {
-        menu.classList.toggle('active');
-        menuBtn.classList.toggle('active');
+        // Fecha o menu ao clicar em um item do menu
+        menu.addEventListener('click', function () {
+          menu.classList.remove('active');
+          menuBtn.classList.remove('active');
+        });
       });
 
-      // Fecha o menu ao clicar em um item do menu
-      menu.addEventListener('click', function () {
-        menu.classList.remove('active');
-        menuBtn.classList.remove('active');
+      $(document).ready(function () {
+        // Quando um link do menu é clicado
+        $('.menu a').on('click', function (event) {
+          // Previne o comportamento padrão do link
+          event.preventDefault();
+
+          // Obtém o destino do link
+          var target = $(this).attr('href');
+
+          // Rolagem suave para a seção correspondente
+          $('html, body').animate({
+            scrollTop: $(target).offset().top
+          }, 500); // 800 milissegundos para a animação
+
+          // Fecha o menu
+          $('.menu').removeClass('active');
+          $('.menu-btn').removeClass('active');
+        });
       });
-    });
 
-    $(document).ready(function () {
-      // Quando um link do menu é clicado
-      $('.menu a').on('click', function (event) {
-        // Previne o comportamento padrão do link
-        event.preventDefault();
-
-        // Obtém o destino do link
-        var target = $(this).attr('href');
-
-        // Rolagem suave para a seção correspondente
-        $('html, body').animate({
-          scrollTop: $(target).offset().top
-        }, 500); // 800 milissegundos para a animação
-
-        // Fecha o menu
-        $('.menu').removeClass('active');
-        $('.menu-btn').removeClass('active');
-      });
-    });
-
-  </script>
+    </script>
 
 
-</body>
+  </body>
 
 </html>
 

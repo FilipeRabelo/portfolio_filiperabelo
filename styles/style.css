@@ -11,11 +11,14 @@
 }
 
 @media (max-width: 700px) {
+
   input,
   textarea,
   select {
-    font-size: 16px; /* Ajuste o tamanho da fonte */
-    -webkit-text-size-adjust: 100%; /* Impede o ajuste de tamanho do texto no iOS */
+    font-size: 16px;
+    /* Ajuste o tamanho da fonte */
+    -webkit-text-size-adjust: 100%;
+    /* Impede o ajuste de tamanho do texto no iOS */
   }
 }
 
@@ -127,7 +130,7 @@ button span {
   color: #fff;
 }
 
-li > a > button {
+li>a>button {
   position: relative;
   display: grid;
   place-content: center;
@@ -137,25 +140,25 @@ li > a > button {
   font-weight: 300;
 }
 
-li > a > button > span {
+li>a>button>span {
   transition: all 300ms ease-in-out;
   grid-area: stack;
 }
 
-li > a > button > span:last-of-type {
+li>a>button>span:last-of-type {
   margin-top: 0.25rem;
   transform: scale(0);
   transition-delay: 0ms;
   border-radius: 50%;
 }
 
-li > a > button:focus-visible > span:first-of-type,
-li > a > button:hover > span:first-of-type {
+li>a>button:focus-visible>span:first-of-type,
+li>a>button:hover>span:first-of-type {
   transform: scale(0);
 }
 
-li > a > button:focus-visible > span:last-of-type,
-li > a > button:hover > span:last-of-type {
+li>a>button:focus-visible>span:last-of-type,
+li>a>button:hover>span:last-of-type {
   transform: scale(1);
   color: crimson;
 }
@@ -188,7 +191,7 @@ li > a > button:hover > span:last-of-type {
   background-color: var(--dark-900);
 }
 
-.line{
+.line {
   width: 35vw;
   height: 25vw;
   margin-left: 100px;
@@ -197,7 +200,7 @@ li > a > button:hover > span:last-of-type {
   animation: borderAinmation 5s linear infinite;
 }
 
-.home-img  img {
+.home-img img {
   width: 25vw;
   margin-left: 100px;
   border: 3px solid crimson;
@@ -424,7 +427,7 @@ li > a > button:hover > span:last-of-type {
   margin-bottom: 60px;
 }
 
-.backcolordiv{
+.backcolordiv {
   background: var(--dark-700);
 }
 
@@ -463,7 +466,8 @@ li > a > button:hover > span:last-of-type {
 
 @media (max-width: 600px) {
   .services-listProjetos {
-    grid-template-columns: 1fr; /* Para telas menores, um item por linha */
+    grid-template-columns: 1fr;
+    /* Para telas menores, um item por linha */
   }
 }
 
@@ -481,13 +485,13 @@ li > a > button:hover > span:last-of-type {
   font-size: 4.5rem;
 }
 
-
-
 .services-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+  /* grid-template-columns: repeat(3, 1fr); */
   grid-gap: 40px;
   margin-top: 50px;
+  margin-bottom: 2rem;
 }
 
 .services-list div {
@@ -523,6 +527,44 @@ li > a > button:hover > span:last-of-type {
 }
 
 /*-----------------------------------------------------------------------------------*/
+
+.tecnologias {
+  color: #fff;
+  background: var(--dark-900);
+}
+
+.tecnologias-content {
+  background: var(--dark-900);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.3rem;
+  align-items: center;
+  padding-top: 4.2rem;
+  padding-bottom: 1rem;
+}
+
+.tech-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white !important;
+  border-radius: 28px;
+  border: 1px solid transparent;
+  box-shadow: 0 0 5px crimson;
+  padding: 20px;
+  transition: all 0.3s ease;
+  max-height: 200px;
+  min-height: 200px;
+  /* max-width: 250px */
+}
+
+.tech-row img {
+  justify-content: center;
+  max-height: 150px;
+  max-width: 150px;
+}
+
+/* -------------------------------------------- */
 
 /* Portfolio section code */
 
@@ -616,7 +658,7 @@ video {
   cursor: pointer;
 }
 
-.colorBlack{
+.colorBlack {
   color: #000;
 }
 
@@ -638,9 +680,12 @@ video {
 
   .row {
     background-color: #000;
-    display: flex; /* Para centralizar a imagem */
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
+    display: flex;
+    /* Para centralizar a imagem */
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    align-items: center;
+    /* Centraliza verticalmente */
   }
 }
 
@@ -648,9 +693,11 @@ video {
   border-radius: 6px;
   height: 25px;
   width: 100%;
-  object-fit: contain; /* Mantém a proporção da imagem */
+  object-fit: contain;
+  /* Mantém a proporção da imagem */
   border-radius: 15px;
 }
+
 /*-----------------------------------------------------------------------------------*/
 
 /* Contact section code */
@@ -911,11 +958,11 @@ video {
     padding: 5rem 10% 2rem;
   }
 
-  .line{
-    display: none; 
+  .line {
+    display: none;
   }
 
-  .home-img img{
+  .home-img img {
     display: none;
   }
 
@@ -929,5 +976,15 @@ video {
 
   video {
     max-height: 220px !important;
+  }
+
+  .tech-row {
+    max-height: 100px;
+    min-height: 100px;
+  }
+
+  .tech-row img {
+    max-height: 150px;
+
   }
 }
