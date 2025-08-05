@@ -782,12 +782,16 @@
       </div>
 
       <p class="copyright">
-        &copy; Filipe Rabelo | 2025
+        &copy; Filipe Rabelo | <span id="year"></span>
       </p>
 
     </footer>
 
     <!-- -------------------------------------------- -->
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 
     <script type="text/JavaScript" src="https://unpkg.com/scrollreveal"></script>
     <script type="text/JavaScript" src="scripts/script.js"></script>
